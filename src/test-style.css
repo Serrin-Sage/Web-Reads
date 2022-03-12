@@ -1,0 +1,104 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.abtus-title{
+    font-size: 60px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* left: 10%; */
+    width: 650px;
+    font-family: 'Corbel', sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    width: 80%;
+}
+
+.name-title {
+    text-align: center;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.abt-text {
+    
+    border: solid black 2px;
+    /* justify-content: space-between; */
+    height: auto;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.link-image {
+    height: 20px;
+    width: 20px;
+    
+}
+
+/******** BUTTONS *******/
+.button-container {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+    
+}
+
+.sign-btn{
+    display: flex;
+    padding: 1rem;
+    
+}
+
+
+.signinbtn {
+    border-radius:2em;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    padding:0.5em 1.4em;
+}
+
+.signinbtn:hover{
+    background-color:#4095c6;
+ }
+
+ .signupbtn {
+    border-radius:2em;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    padding:0.5em 1.4em;
+}
+
+.signupbtn:hover{
+    background-color:#4095c6;
+ }

@@ -1,0 +1,215 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 2px rgb(168, 167, 167);
+    padding: 25px;
+    z-index: 10;
+}
+
+/* .signinbtn{
+    display:inline-block;
+    padding:0.5em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    right: 12%;
+    position: absolute;
+}
+
+.signinbtn:hover{
+   background-color:#4095c6;
+}
+@media all and (max-width:1300px){
+    .signinbtn{
+    display:none;
+    }
+}
+
+.signupbtn{
+    display:inline-block;
+    padding:0.5em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    right: 5%;
+    position: absolute;
+}
+
+.signupbtn:hover{
+   background-color:#4095c6;
+} */
+@media all and (max-width:1300px){
+    .signupbtn{
+    display:none;
+    }
+}
+
+.homebtn{
+    /* display:inline-block;
+    padding:0.2em 1.45em;
+    margin:0.1em;
+    border:0.15em solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Segoe UI','Roboto',sans-serif;
+    font-weight:400;
+    color:#000000;
+    background-color:#CCCCCC;
+    text-align:center;
+    position:relative; */
+}
+
+.homebtn {
+    /* background: url(./images/logo.png); */
+    cursor:pointer;
+    border:none;
+    width: auto;
+    height:auto;
+}
+
+.homebtn:hover{
+    border-color:#7a7a7a;
+}
+
+.homebtn:active{
+    background-color:#999999;
+}
+
+.intro {
+    background-image: url('images/gettyimages-102854429-2048x2048.jpg');
+    height: 650px;
+}
+
+.intro h1 {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .aboutus {
+}
+
+.aboutus h2 {
+    position: relative;
+    left: 10%;
+    font-family: 'Corbel', sans-serif;
+    font-size: 40px;
+} */
+
+/* .aboutus p1 {
+    position: relative;
+    left: 10%;
+} */
+
+/* .aboutusparagraph {
+    position: relative;
+    left: 10%;
+    width: 650px;
+    font-family: 'Corbel', sans-serif;
+    font-size: 20px;
+} */
+
+.howitworks h2 {
+    position: relative;
+    left: 10%;
+    font-family: 'Corbel', sans-serif;
+    font-size: 40px;
+}
+
+.howitworksparagraph {
+    position: relative;
+    left: 10%;
+    width: 650px;
+    font-family: 'Corbel', sans-serif;
+    font-size: 20px;
+}
+
+/* sign up/in forms */
+
+.formcontainer {
+    background: linear-gradient(135deg, #98ceee, #4eb5f1);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontainer h2 {
+    color: #4eb5f1;
+    text-align: center;
+    margin: 80px 0px 40px 0px;
+}
+
+.app-wrapper {
+    background-color: #fff;
+    min-width: 350px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 6px 6px rgb(168, 167, 167); */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, */
+}
+
+.form-field {
+    margin: 20px;
+    color: #969292;
+    font-size: 16px;
+}
+
+.input {
+    height: 32px;
+    font-size: 20px;
+    outline: none;
+    width: 100;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: 2x solid black;
+    margin-bottom: 10px;
+}
+
+button {
+    display:flex;
+    padding: 10px 60px;
+    margin:auto;
+    border-radius: 25px;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    transition: all 0.2s;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.error {
+    color: red;
+}

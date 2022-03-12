@@ -31,10 +31,11 @@ function App() {
         </Routes>
       </div>
       <div className="Footer">
-      <Footer />
+
         <Routes>
           <Route path='/contactus' element={<AboutUs />}/>
         </Routes>
+        <Footer />
       </div>
       
         

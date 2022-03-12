@@ -29,14 +29,13 @@ function App() {
           } />
          
         </Routes>
-        <div className="Footer">
-          <Footer />
-            <Routes>
-              <Route path='/contactus' element={<AboutUs />}/>
-          </Routes>
-        </div>
       </div>
-      
+      <div className="Footer">
+      <Footer />
+        <Routes>
+          <Route path='/contactus' element={<AboutUs />}/>
+        </Routes>
+      </div>
       
         
     </Router>

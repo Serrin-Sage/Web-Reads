@@ -129,19 +129,31 @@
     font-size: 20px;
 } */
 
-.howitworks h2 {
+.howitworks {
+    display: flex;
     position: relative;
-    left: 10%;
     font-family: 'Corbel', sans-serif;
     font-size: 40px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+h2 {
+    position: relative;
+    font-family: 'Corbel', sans-serif;
+    font-size: 40px;
+    text-align: center;
 }
 
 .howitworksparagraph {
     position: relative;
-    left: 10%;
     width: 650px;
     font-family: 'Corbel', sans-serif;
     font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* sign up/in forms */
@@ -212,4 +224,19 @@ button:active {
 
 .error {
     color: red;
+}
+
+/********* FOOTER CSS *********/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #9bc1ce;
+    
+}
+
+.contact {
+    text-decoration: none;
+    font-weight: bold;
 }

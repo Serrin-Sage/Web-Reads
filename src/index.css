@@ -213,3 +213,18 @@ button:active {
 .error {
     color: red;
 }
+
+/********* FOOTER CSS *********/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #9bc1ce;
+    
+}
+
+.contact {
+    text-decoration: none;
+    font-weight: bold;
+}

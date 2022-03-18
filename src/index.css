@@ -6,6 +6,7 @@
     box-shadow: 0 2px 4px 2px rgb(168, 167, 167);
     padding: 2px;
     z-index: 10;
+    position: relative;
 }
 
 /* .signinbtn{
@@ -96,7 +97,7 @@
 }
 
 .intro {
-    background-image: url('images/bg_image2.jpg');
+    background-image: url('images/gettyimages-102854429-2048x2048.jpg');
     height: 650px;
 }
 
@@ -133,7 +134,7 @@
 
 .howitworks {
     /* background: linear-gradient(135deg, #aac5df, #5694c7); */
-    background: linear-gradient(135deg, #98ceee, #4eb5f1);
+    /* background: linear-gradient(135deg, #98ceee, #4eb5f1); */
     display: flex;
     position: relative;
     font-family: 'Corbel', sans-serif;
@@ -182,6 +183,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .formcontainer h2 {

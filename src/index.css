@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 4px 2px rgb(168, 167, 167);
-    padding: 25px;
+    padding: 2px;
     z-index: 10;
+    position: relative;
 }
 
 /* .signinbtn{
@@ -56,10 +57,12 @@
 .signupbtn:hover{
    background-color:#4095c6;
 } */
-@media all and (max-width:1300px){
-    .signupbtn{
-    display:none;
-    }
+
+.home-container {
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    transform:scale(0.7);
 }
 
 .homebtn{
@@ -103,7 +106,7 @@
     position: relative;
     top: 150px;
     font-size: 65px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* .aboutus {
@@ -130,6 +133,8 @@
 } */
 
 .howitworks {
+    /* background: linear-gradient(135deg, #aac5df, #5694c7); */
+    /* background: linear-gradient(135deg, #98ceee, #4eb5f1); */
     display: flex;
     position: relative;
     font-family: 'Corbel', sans-serif;
@@ -137,23 +142,36 @@
     text-align: center;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
 }
 
 h2 {
     position: relative;
-    font-family: 'Corbel', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
 }
 
 .howitworksparagraph {
     position: relative;
     width: 650px;
-    font-family: 'Corbel', sans-serif;
+    font-family: 'Verdana', sans-serif;
+    color: #4e4e4e;
     font-size: 20px;
-    text-align: center;
+    font-weight: 400;
+    text-align: left;
     
     padding-bottom: 2rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 6px 6px rgb(168, 167, 167); */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, */
 }
 
 /* sign up/in forms */
@@ -165,6 +183,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .formcontainer h2 {

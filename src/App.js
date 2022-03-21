@@ -6,9 +6,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import SignUpForm from "./Components/SignUpForm";
 import SignInForm from "./Components/SignInForm";
 import Footer from "./Components/Footer";
-
+import UserPage from "./Components/UserPage";
 
 function App() {
+  onkeydown = (event) => {
+    if(event.key === '~'){
+      window.open("http://localhost:3000/userpage")
+    }
+  }
+  
   return (
     <Router>
       <div className="App">
@@ -18,7 +24,6 @@ function App() {
             <>
               <Intro />
               <HowItWorks />
-              
             </>
           } />
           <Route path='/signup' element={
@@ -27,11 +32,12 @@ function App() {
           <Route path='/signin' element={
             <SignInForm />
           } />
-         
+          <Route path='/userpage' element={
+            <UserPage />
+          } />
         </Routes>
       </div>
       <div className="Footer">
-
         <Routes>
           <Route path='/contactus' element={<AboutUs />}/>
         </Routes>

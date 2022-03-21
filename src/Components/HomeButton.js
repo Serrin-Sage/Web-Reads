@@ -4,7 +4,9 @@ const HomeButton = () => {
   return (
     <div className="home-container">
       <a href='/' className="homebtn">
-      <img src={logo} />
+        <div className="img-container">
+          <img src={logo} alt="WEB-READS"/>
+        </div>
       </a>
     </div>
     

@@ -1,22 +1,38 @@
 .user-page-container {
-    background-color: rgb(184, 255, 240);
+    background-color: rgb(229, 252, 247);
+    height: 100vh;
 }
 
 .side-bar-nav{
     height: 250px;
-    width: 250px;
-    background-color: azure;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid;
+    height: 100vh;
 }
 
 .user-icon {
-    border-style: solid;
-    padding: 1rem;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+.user-default {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .settings {
-    border-style: solid;
+    /* border-bottom: solid; */
+    text-decoration: underline 0.15em rgba(0,0,0,0);
+    transition: text-decoration-color 300ms;
     padding: 1rem;
+    max-width: 100%;
+}
+
+.settings:hover {
+    text-decoration-color: rgba(0,0,0,1);
+    cursor: pointer;
 }

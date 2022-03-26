@@ -5,58 +5,11 @@
     justify-content: space-between;
     box-shadow: 0 2px 4px 2px rgb(168, 167, 167);
     padding: 2px;
-    z-index: 10;
+    z-index: 99;
     position: relative;
+    background-color: white;
 }
 
-/* .signinbtn{
-    display:inline-block;
-    padding:0.5em 1.4em;
-    margin:0 0.3em 0.3em 0;
-    border-radius:2em;
-    border: 1px solid #9bc1ce;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#4eb5f1;
-    text-align:center;
-    transition: all 0.2s;
-    right: 12%;
-    position: absolute;
-}
-
-.signinbtn:hover{
-   background-color:#4095c6;
-}
-@media all and (max-width:1300px){
-    .signinbtn{
-    display:none;
-    }
-}
-
-.signupbtn{
-    display:inline-block;
-    padding:0.5em 1.4em;
-    margin:0 0.3em 0.3em 0;
-    border-radius:2em;
-    border: 1px solid #9bc1ce;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#4eb5f1;
-    text-align:center;
-    transition: all 0.2s;
-    right: 5%;
-    position: absolute;
-}
-
-.signupbtn:hover{
-   background-color:#4095c6;
-} */
 
 .home-container {
     -webkit-transform:scale(0.7);
@@ -65,23 +18,24 @@
     transform:scale(0.7);
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.link-image {
+    height: 20px;
+    width: 20px;
+    
+}
 .homebtn{
-    /* display:inline-block;
-    padding:0.2em 1.45em;
-    margin:0.1em;
-    border:0.15em solid #CCCCCC;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Segoe UI','Roboto',sans-serif;
-    font-weight:400;
-    color:#000000;
-    background-color:#CCCCCC;
-    text-align:center;
-    position:relative; */
+   
 }
 
 .homebtn {
-    /* background: url(./images/logo.png); */
+    
     cursor:pointer;
     border:none;
     width: auto;
@@ -109,28 +63,7 @@
     font-family: 'Verdana', sans-serif;
 }
 
-/* .aboutus {
-}
 
-.aboutus h2 {
-    position: relative;
-    left: 10%;
-    font-family: 'Corbel', sans-serif;
-    font-size: 40px;
-} */
-
-/* .aboutus p1 {
-    position: relative;
-    left: 10%;
-} */
-
-/* .aboutusparagraph {
-    position: relative;
-    left: 10%;
-    width: 650px;
-    font-family: 'Corbel', sans-serif;
-    font-size: 20px;
-} */
 
 .howitworks {
     /* background: linear-gradient(135deg, #aac5df, #5694c7); */
@@ -264,3 +197,54 @@ button:active {
 .contact:hover {
     color: white;
 }
+
+/******** BUTTONS *******/
+.button-container {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+     
+ }
+ 
+ .sign-btn{
+     display: flex;
+     padding: 1rem;
+     
+ }
+ 
+ 
+ .signinbtn {
+     border-radius:2em;
+     border: 1px solid #9bc1ce;
+     box-sizing: border-box;
+     text-decoration:none;
+     font-family:'Roboto',sans-serif;
+     font-weight:300;
+     color:#FFFFFF;
+     background-color:#4eb5f1;
+     text-align:center;
+     transition: all 0.2s;
+     padding:0.5em 1.4em;
+ }
+ 
+ .signinbtn:hover{
+     background-color:#4095c6;
+  }
+ 
+  .signupbtn {
+     border-radius:2em;
+     border: 1px solid #9bc1ce;
+     box-sizing: border-box;
+     text-decoration:none;
+     font-family:'Roboto',sans-serif;
+     font-weight:300;
+     color:#FFFFFF;
+     background-color:#4eb5f1;
+     text-align:center;
+     transition: all 0.2s;
+     padding:0.5em 1.4em;
+ }
+ 
+ .signupbtn:hover{
+     background-color:#4095c6;
+  }

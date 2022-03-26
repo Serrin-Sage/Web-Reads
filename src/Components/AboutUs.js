@@ -5,7 +5,10 @@ import linkedin from "../images/linkedin-logo.png"
 const AboutUs = () => {
   return (
     <div className="aboutus">
+      <div className="title-container">
         <h2 className="abtus-title">About Us</h2>
+      </div>
+        
         <div className="about-container">
           <div id="abt-serrin" className="abt-text">
             <h2 className="name-title">Serrin</h2>

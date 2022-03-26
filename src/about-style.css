@@ -4,7 +4,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 4rem;
-    
+    height: 100%;
+}
+
+.title-container {
+    background-color: white;
+    width: 100%;
+    z-index: 10;
 }
 
 .abtus-title{
@@ -23,7 +29,8 @@
     /* padding: 1rem; */
     width: 80%;
     animation: 1s ease-out 0s 1 slideFromTop;
-    z-index: 1;
+    z-index: 9;
+    
 }
 
 .name-title {
@@ -44,7 +51,7 @@
 
 @keyframes slideFromTop {
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-150%);
     }
     100% {
         transform: translateY(0);

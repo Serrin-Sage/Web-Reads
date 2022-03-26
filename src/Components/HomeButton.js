@@ -1,13 +1,14 @@
 import logo from "../images/logo.png"
+import { Link } from "react-router-dom"
 
 const HomeButton = () => {
   return (
     <div className="home-container">
-      <a href='/' className="homebtn">
+      <Link to='/' className="homebtn">
         <div className="img-container">
           <img src={logo} alt="WEB-READS"/>
         </div>
-      </a>
+      </Link>
     </div>
     
   )

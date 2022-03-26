@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 const ContactUs = () => {
     return (
-        <a href="/contactus" className="contact">
+        <Link to="/contactus" className="contact">
             Contact Us
-        </a>
+        </Link>
     )
 }
 

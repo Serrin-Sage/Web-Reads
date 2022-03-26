@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 const SignUpButton = () => {
   return (
-    <a href='/signup' className="signupbtn">
+    <Link to='/signup' className="signupbtn">
         Sign up
-    </a>
+    </Link>
   )
 }
 

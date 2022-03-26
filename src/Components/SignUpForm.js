@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Validation from "./Validation";
+import { Link } from "react-router-dom";
+
 
 function SignUpForm() {
 
@@ -83,8 +85,8 @@ function SignUpForm() {
                     </div>
                 </form>
                 <div>
-                <p>Already have an account? Sign in <a href='/signin' >
-                here!</a>
+                <p>Already have an account? Sign in <Link to='/signin' >
+                here!</Link>
                 </p>
                 </div>
             </div>

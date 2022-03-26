@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Validation from "./Validation";
+import { Link } from "react-router-dom";
+
 
 function SignInForm() {
 
@@ -57,8 +59,8 @@ function SignInForm() {
                         <button className="submit" onClick={handleFormSubmit}>Sign In</button>
                     </div>
                 </form>
-                <p>Don't have an account? Sign up <a href='/signup' >
-                here!</a>
+                <p>Don't have an account? Sign up <Link to='/signup' >
+                here!</Link>
                 </p>
             </div>
             

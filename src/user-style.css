@@ -1,8 +1,11 @@
 .user-page-container {
-    background-color: rgb(229, 252, 247);
+    display: flex;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
+
 }
 
+/***** SIDE BAR NAV *****/
 .side-bar-nav{
     height: 250px;
     width: 200px;
@@ -24,15 +27,28 @@
     max-height: 100%;
 }
 
-.settings {
+.side-bar-nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+
+}
+
+.settings-text {
     /* border-bottom: solid; */
     text-decoration: underline 0.15em rgba(0,0,0,0);
     transition: text-decoration-color 300ms;
     padding: 1rem;
-    max-width: 100%;
 }
 
-.settings:hover {
+.settings-text:hover {
     text-decoration-color: rgba(0,0,0,1);
     cursor: pointer;
+}
+
+/***** MAIN PAGE *****/
+.main-user-page {
+    width: 100vw;
 }

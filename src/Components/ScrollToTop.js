@@ -10,3 +10,5 @@ export default function ScrollToTop() {
 
     return null;
 }
+
+//This function was taken directly from https://v5.reactrouter.com/web/guides/scroll-restoration//

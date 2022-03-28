@@ -1,6 +1,6 @@
 import React from 'react'
 import user_default from '../images/user_default.png'
-import { NavLink, Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function UserPage() {
   return (
@@ -16,7 +16,7 @@ function UserPage() {
                 </div>
             </div>
             <div className='main-user-page'>
-                HELLO TEST
+                
             </div>
         </div>
     </div>

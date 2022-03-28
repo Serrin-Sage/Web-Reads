@@ -21,8 +21,6 @@ const AboutUs = () => {
           <div id="abt-sadia" className="abt-text">
             <h2 className="name-title">Sadia</h2>
             <p>TEXT TEXT TEXT</p>
-
-            
           </div>
           <div id="abt-chris" className="abt-text">
             <h2 className="name-title">Chris</h2>

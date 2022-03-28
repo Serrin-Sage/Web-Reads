@@ -1,7 +1,12 @@
+// import book_image from "../images/bookshelves-bright-colors.jpg"
 const Intro = () => {
   return (
+    
     <div className="intro">
-        <h1>What Should I Read Today?</h1>
+        {/* <img src={book_image} alt=" OF BOOKS" /> */}
+        <div className="title-text">
+            What Should I Read Today?
+        </div>
     </div>
   )
 }

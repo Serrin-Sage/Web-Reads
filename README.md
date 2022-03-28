@@ -9,3 +9,9 @@ To open project in development mode do
 To view deployment:  
 
 [View Deployment](https://web-reads.herokuapp.com/)
+
+To view development of User Profile: 
+
+press the ```~``` (tilde) key 
+
+```(SHIFT + `)```

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './about-style.css'
 import './user-style.css'
+import './search-bar.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

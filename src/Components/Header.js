@@ -1,8 +1,8 @@
 import HomeButton from "./HomeButton"
-import SignInButton from "./SignInButton"
-import SignUpButton from "./SignUpButton"
+// import SignInButton from "./SignInButton"
+// import SignUpButton from "./SignUpButton"
 import Navbar from "./Navbar"
-import Footer from "./Footer"
+// import Footer from "./Footer"
 
 
 const Header = () => {

@@ -11,9 +11,10 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
+  const url = "http://localhost:3000/userpage"
   onkeydown = (event) => {
     if(event.key === '~'){
-      window.open("http://localhost:3000/userpage")
+      window.open(url)
     }
   }
   

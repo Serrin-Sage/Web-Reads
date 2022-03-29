@@ -216,11 +216,14 @@ button:active {
 .contact {
     text-decoration: none;
     font-weight: bold;
+    padding-right: 1rem;
 }
 
 .contact:hover {
     color: white;
 }
+
+
 
 /******** BUTTONS *******/
 .button-container {

@@ -1,6 +1,8 @@
 // import { NavLink } from "react-router-dom"
-import github from "../images/GitHub-logoDark.png"
-import linkedin from "../images/linkedin-logo.png"
+// import github from "../images/GitHub-logoDark.png"
+// import linkedin from "../images/linkedin-logo.png"
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const AboutUs = () => {
   return (
@@ -14,8 +16,16 @@ const AboutUs = () => {
             <h2 className="name-title">Serrin</h2>
             <p>TEXT TEXT TEXT</p>
             <div className="nav-container">
-              <a href="https://github.com/" rel="noreferrer" target="_blank"><img src={github} alt="github logo" className="link-image"/></a>
-              <a href="https://www.linkedin.com/feed/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin logo" className="link-image"/></a>
+              <a href="https://github.com/" rel="noreferrer" target="_blank">
+                <div className='link-icon' id='github-icon'>
+                  <GitHubIcon />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/feed/" rel="noreferrer" target="_blank">
+                <div className='link-icon' id='linkedin-icon'>
+                  <LinkedInIcon />
+                </div>
+              </a>
             </div> 
           </div>
           <div id="abt-sadia" className="abt-text">

@@ -275,3 +275,62 @@ button:active {
  .signupbtn:hover{
      background-color:#4095c6;
   }
+
+  /******** BOOK LIST *******/
+.book-info{
+    background-color:#74c1ee;
+    width: 600px;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+}
+
+.book-info h3{
+    font-weight: bold;
+}
+
+.book-list{
+    position: relative;
+    left: 35%;
+}
+
+.book-list h1{
+    font-weight: bold;
+}
+
+.book-details{
+    width: 75%;
+}
+
+.fav-icon{
+    width: 25%;
+    margin: auto;
+}
+
+/******** USER PAGE *******/
+
+.settings-text{
+    border-radius: 5px;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+    padding:0.5em 1.4em;
+    margin: 10px;
+    width: 140px;
+}
+
+.settings-text:hover{
+    background-color:#4095c6;
+}
+
+.side-bar-nav{
+    border: none;
+}

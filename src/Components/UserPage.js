@@ -15,22 +15,21 @@ function UserPage() {
                 <div className='side-bar-nav-options'>
                     <Link to="/userpage" className='settings-text'>Profile</Link>
                     <Link to="/settings" className='settings-text'>Settings</Link>
+                    <Link to="/booklist" className='settings-text'>Book List</Link>
                 </div>
             </div>
             <div className='main-user-page'>
                 <div>
-                <ul>
-                    Profile Page
-                    <li>
-                        User Name:
-                    </li>
-                    <li>
-                        Email:
-                    </li>
-                    <li>
-                        Book List:
-                    </li>
-                </ul>
+                    Your Profile
+                    <div className='profile-container'>
+                        <div className='username-display'>
+                            UserName
+                        </div>
+                        <div className='email-display'>
+                            Email@email.com
+                        </div>
+                    </div>
+                    Liked Books:
                 </div>
                 
                 <SearchBar placeholder="Enter a Book Title..." data={BookData}/>

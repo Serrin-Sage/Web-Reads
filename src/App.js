@@ -8,6 +8,7 @@ import SignInForm from "./Components/SignInForm";
 import Footer from "./Components/Footer";
 import UserPage from "./Components/UserPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import BookList from "./Components/BookList";
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
           } />
           <Route path='/userpage' element={
             <UserPage />
+          } />
+          <Route path='/booklist' element={
+            <BookList />
           } />
         </Routes>
       </div>

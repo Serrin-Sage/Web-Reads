@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="about-container">
           <div id="abt-serrin" className="abt-text">
             <h2 className="name-title">Serrin</h2>
-            <p>TEXT TEXT TEXT</p>
+            <p>Graduating from Hunter College in 2022. Currently employed at Brooklyn Game Labs. </p>
             <div className="nav-container">
               <a href="https://github.com/" rel="noreferrer" target="_blank">
                 <div className='link-icon' id='github-icon'>

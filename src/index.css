@@ -30,9 +30,7 @@
     width: 20px;
     
 }
-.homebtn{
-   
-}
+
 
 .homebtn {
     
@@ -76,8 +74,27 @@
     font-family: 'Verdana', sans-serif;
     border-radius: 10px;
     padding: 0.5rem;
+    
 }
 
+.title-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Verdana', sans-serif;
+    border-radius: 10px;
+    padding: 0.5rem;
+    animation: fadeIn linear 0.9s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .howitworks {
@@ -172,6 +189,30 @@ h2 {
 }
 
 button {
+    /* display:flex;
+    padding: 10px 60px;
+    margin:auto;
+    border-radius: 25px;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    transition: all 0.2s; */
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.error {
+    color: red;
+}
+
+.submit {
     display:flex;
     padding: 10px 60px;
     margin:auto;
@@ -185,31 +226,58 @@ button {
     color:#FFFFFF;
     background-color:#4eb5f1;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
-button:active {
-    transform: translateY(2px);
-}
-
-.error {
-    color: red;
+.submit:hover {
+    background-color:#4095c6;
 }
 
 .bottom-text {
     padding: 1rem;
     padding-top: 5rem;
+    text-align: center;
 }
 
 .bottom-text:hover {
     cursor: default;
 }
+
+.here-text::before {
+    content: attr(data-content);
+    display: block;
+    font-weight: bold;
+    height: 0px;
+    visibility: hidden;
+}
+
+.here-text::after {
+    content: attr(data-content);
+    font-weight: normal;
+}
+
+.here-text:hover::after {
+    font-weight: bold;
+}
+
+.here-text {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.here-text:hover {
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+
 /********* FOOTER CSS *********/
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: #679bccb2;
+    background-color: #A7DAF8;
     z-index: 99;
 }
 

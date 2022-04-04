@@ -59,7 +59,7 @@ function SignInForm() {
                         <button className="submit" onClick={handleFormSubmit}>Sign In</button>
                     </div>
                 </form>
-                <p className="bottom-text">Don't have an account? Sign up <Link to='/signup' >
+                <p className="bottom-text">Don't have an account? Sign up <Link to='/signup' className="here-text">
                 here!</Link>
                 </p>
             </div>

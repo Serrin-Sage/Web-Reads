@@ -85,7 +85,7 @@ function SignUpForm() {
                     </div>
                 </form>
                 <div>
-                <p>Already have an account? Sign in <Link to='/signin' >
+                <p className="bottom-text">Already have an account? Sign in <Link to='/signin' className="here-text">
                 here!</Link>
                 </p>
                 </div>

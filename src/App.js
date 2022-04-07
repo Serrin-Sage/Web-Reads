@@ -9,9 +9,10 @@ import Footer from "./Components/Footer";
 import UserPage from "./Components/UserPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import BookList from "./Components/BookList";
-
+import Settings from "./Components/Settings";
 
 function App() {
+  
   const url = "http://localhost:3000/userpage"
   onkeydown = (event) => {
     if(event.key === '~'){
@@ -42,6 +43,9 @@ function App() {
           } />
           <Route path='/booklist' element={
             <BookList />
+          } />
+          <Route path='/settings' element={
+            <Settings />
           } />
         </Routes>
       </div>

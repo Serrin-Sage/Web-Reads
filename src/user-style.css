@@ -55,10 +55,11 @@
     margin: 10px;
     width: 140px;
     height: 60px;
+    transition: 0.8s;
 }
 
 .settings-text:hover{
-    background-color:#4095c6;
+    background: linear-gradient(#4eb5f1, #98ceee); 
 }
 
 /***** MAIN PAGE *****/

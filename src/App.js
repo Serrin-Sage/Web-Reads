@@ -24,7 +24,12 @@ function App() {
         if (currentThemeColor) {
             setColorTheme(currentThemeColor);
         }
-    }, []);
+    }, [colorTheme]);
+
+    //Updates selected Theme
+    const updateTheme = (newColorTheme) => {
+      setColorTheme(newColorTheme)
+    }
 
   const url = "http://localhost:3000/userpage"
   onkeydown = (event) => {
@@ -58,7 +63,7 @@ function App() {
             <BookList />
           } />
           <Route path='/settings' element={
-            <Settings />
+            <Settings changeColor={updateTheme}/>
           } />
         </Routes>
       </div>

@@ -111,10 +111,11 @@
     //Header
     .header {
         background-color: #000000;
+        transition: 0.8s;
         .signinbtn {
             background-color: #444444;
             border: 1px solid #000000;
-            
+            transition: 0.8s;
         }
         .signinbtn:hover {
             background-color: rgb(255, 255, 255);
@@ -123,6 +124,7 @@
         .signupbtn {
             background-color: #444444;
             border: 1px solid #000000;
+            transition: 0.8s;
         }
         .signupbtn:hover {
             background-color: rgb(255, 255, 255);
@@ -156,13 +158,168 @@
         }
     }
 
+    //Profile page
+    .user-page-container {
+        .side-bar-nav {
+            background-color: black;
+            .settings-text {
+                background: linear-gradient(#838383, #333333);
+                border: none;
+            }
+            .settings-text:hover{
+                background: linear-gradient(#333333,#838383);
+            }
+        }
+        .main-user-page {
+            background: linear-gradient(135deg, #444444, #888888);
+        }
+    }
+
 }
 
 .Footer.dark-theme {
     .footer {
         background-color: rgb(59, 59, 59);
-        .footer-container {
+        .contact {
             color: rgb(196, 196, 196);
         }
+        .contact:hover {
+            color: white;
+        }
+    }
+    #abt-serrin {
+        background-color: #303030;
+        color: white;
+        
+    }
+    #abt-sadia {
+        background-color: #282828;
+        color: white;
+        
+    }
+    #abt-chris {
+        background-color: #242424;
+        color: white;
+        
+    }
+    #abt-aida {
+        background-color: #202020;
+        color: white;
+        
+    }
+
+    .link-icon {
+        color: white;
+    }
+}
+
+//===== COLORFUL THEME =====//
+.App.colorful-theme{
+    transition: 0.8s;
+    //Header
+    .header {
+        background-color: #8cdce7;
+        transition: 0.8s;
+        .signinbtn {
+            background-color: #e4a1de;
+            border: 1px solid #8cdce7;
+            transition: 0.8s;
+        }
+        .signinbtn:hover {
+            background-color: #a1c0e4;
+            color:#000000;
+        }
+        .signupbtn {
+            background-color: #e4a1de;
+            border: 1px solid #8cdce7;
+            transition: 0.8s;
+        }
+        .signupbtn:hover {
+            background-color: #a1c0e4;
+            color:#000000;
+        }
+    }
+    //Intro
+    .howitworks {
+        background: linear-gradient(135deg, #ebace5, #90e6e6);
+    }
+    //Sign-in/up Forms
+    .formcontainer {
+        background: linear-gradient(135deg, #ebace5, #90e6e6);
+        h2 {
+            color: rgba(112, 7, 116, 0.849);
+        }
+        .app-wrapper {
+            background-color: rgba(255, 0, 221, 0.411);
+        }
+        .form-field {
+            color:white;
+        }
+        .submit {
+            background-color: #89acf7;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .submit:hover {
+            background-color: rgb(113, 112, 179);
+            color: rgb(255, 255, 255);
+        }
+        .bottom-text {
+            color: white;
+        }
+    }
+
+    //Profile page
+    .user-page-container {
+        .side-bar-nav {
+            background-color: rgb(183, 235, 248);
+            .settings-text {
+                background: #ebace5;
+                border: none;
+            }
+            .settings-text:hover{
+                background: linear-gradient(135deg, #90e6e6, #ebace5);
+            }
+        }
+        .main-user-page {
+            background: linear-gradient(270deg, #90e6e6, #ebace5);
+        }
+    }
+
+}
+
+.Footer.colorful-theme {
+    .footer {
+        background-color: #46a0ac;
+        .contact {
+            color: rgb(132, 0, 255);
+        }
+        .contact:hover {
+            color: white;
+        }
+    }
+    #abt-serrin {
+        background-color: #E0B4E6;
+        color: white;
+        
+    }
+    #abt-sadia {
+        background-color: #90E6E6;
+        color: white;
+        
+    }
+    #abt-chris {
+        background-color: #E0B4E6;
+        color: white;
+        
+    }
+    #abt-aida {
+        background-color: #90E6E6;
+        color: white;
+        
+    }
+
+    .link-icon {
+        color: white;
     }
 }

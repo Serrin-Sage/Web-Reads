@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-function ColorSwitcher() {
+function ColorSwitcher({changeColor}) {
   
-    const [colorTheme, setColorTheme] = useState('default-theme')
+    const [colorTheme, setColorTheme] = useState('')
 
     useEffect(()=> {
         //check for selected theme in local storage
@@ -11,12 +11,13 @@ function ColorSwitcher() {
         if (currentThemeColor) {
             setColorTheme(currentThemeColor);
         }
-    }, []);
+    }, [colorTheme]);
 
     //set theme
     const handleClick = (theme) => {
         setColorTheme(theme);
-        localStorage.setItem('theme-color', theme)
+        localStorage.setItem('theme-color', theme);
+        changeColor(theme)
     }
   return (
     <div className={`color-switcher ${colorTheme}`}>

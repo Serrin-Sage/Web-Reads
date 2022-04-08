@@ -1,10 +1,10 @@
 import React from 'react'
 import ColorSwitcher from './ColorSwitcher'
 
-function Settings() {
+function Settings({changeColor}) {
   return (
     <div className='Settings'>
-        <ColorSwitcher />
+        <ColorSwitcher changeColor={changeColor}/>
     </div>
   )
 }

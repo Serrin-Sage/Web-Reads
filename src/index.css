@@ -40,6 +40,10 @@
     height:auto;
 }
 
+.logo-img {
+    height: 110px;
+}
+
 .homebtn:hover{
     border-color:#7a7a7a;
 }
@@ -267,6 +271,10 @@ button:active {
     z-index: 99;
 }
 
+.footer-container {
+    color: black;
+}
+
 .contact {
     text-decoration: none;
     font-weight: bold;
@@ -365,7 +373,7 @@ button:active {
 
 /******** USER PAGE *******/
 
-.settings-text{
+/* .settings-text{
     border-radius: 5px;
     border: 1px solid #9bc1ce;
     box-sizing: border-box;
@@ -387,4 +395,4 @@ button:active {
 
 .side-bar-nav{
     border: none;
-}
+} */

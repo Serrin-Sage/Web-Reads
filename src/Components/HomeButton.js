@@ -6,7 +6,7 @@ const HomeButton = () => {
     <div className="home-container">
       <Link to='/' className="homebtn">
         <div className="img-container">
-          <img src={logo} alt="WEB-READS"/>
+          <img src={logo} alt="WEB-READS" className="home-img"/>
         </div>
       </Link>
     </div>

@@ -63,7 +63,7 @@
 }
 
 .color-switcher.dark-theme {
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(75, 75, 75);
     
     .content-box {
         color: white;
@@ -99,23 +99,70 @@
     }
 }
 
-.header.default-theme {
-    background-color: white;
-}
 
-.header.light-theme {
-    background-color: rgb(160, 160, 160);
-}
-
-.header.dark-theme {
+//******** THEMES *********//
+.App.default-theme {
     transition: 0.8s;
-    background-color: rgb(0, 0, 0);
-    .signinbtn {
-        background-color: #868686;
-        border: 1px solid #ffffff;
+}
+
+//===== DARK THEME =====//
+.App.dark-theme{
+    transition: 0.8s;
+    //Header
+    .header {
+        background-color: #000000;
+        .signinbtn {
+            background-color: #444444;
+            border: 1px solid #000000;
+            
+        }
+        .signinbtn:hover {
+            background-color: rgb(255, 255, 255);
+            color:#000000;
+        }
+        .signupbtn {
+            background-color: #444444;
+            border: 1px solid #000000;
+        }
+        .signupbtn:hover {
+            background-color: rgb(255, 255, 255);
+            color:#000000;
+        }
     }
-    .signupbtn {
-        background-color: #868686;
-        border: 1px solid #ffffff;
+    //Intro
+    .howitworks {
+        background: linear-gradient(135deg, #818181, #131414);
+    }
+    //Sign-in/up Forms
+    .formcontainer {
+        background: linear-gradient(135deg, #818181, #131414);
+        h2 {
+            color: white;
+        }
+        .app-wrapper {
+            background-color: rgba(0, 0, 0, 0.411);
+        }
+        .submit {
+            background-color: #444444;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .submit:hover {
+            background-color: white;
+            color: black;
+        }
+        .bottom-text {
+            color: white;
+        }
+    }
+
+}
+
+.Footer.dark-theme {
+    .footer {
+        background-color: rgb(59, 59, 59);
+        .footer-container {
+            color: rgb(196, 196, 196);
+        }
     }
 }

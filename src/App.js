@@ -10,9 +10,22 @@ import UserPage from "./Components/UserPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import BookList from "./Components/BookList";
 import Settings from "./Components/Settings";
+import { useEffect, useState } from 'react'
+
 
 function App() {
   
+  const [colorTheme, setColorTheme] = useState('default-theme')
+
+    useEffect(()=> {
+        //check for selected theme in local storage
+        const currentThemeColor = localStorage.getItem('theme-color');
+        //if found set theme
+        if (currentThemeColor) {
+            setColorTheme(currentThemeColor);
+        }
+    }, []);
+
   const url = "http://localhost:3000/userpage"
   onkeydown = (event) => {
     if(event.key === '~'){
@@ -23,7 +36,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop/>
-      <div className="App">
+      <div className={`App ${colorTheme}`}>
       <Header />
         <Routes>
           <Route path='/' element={
@@ -49,7 +62,7 @@ function App() {
           } />
         </Routes>
       </div>
-      <div className="Footer">
+      <div className={`Footer ${colorTheme}`}>
         <Routes>
           <Route path='/contactus' element={<AboutUs />}/>
         </Routes>

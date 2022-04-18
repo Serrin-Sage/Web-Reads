@@ -130,6 +130,9 @@
             background-color: rgb(255, 255, 255);
             color:#000000;
         }
+        .logo-img {
+            filter: brightness(0) invert(1);
+        }
     }
     //Intro
     .howitworks {
@@ -238,7 +241,11 @@
             background-color: #a1c0e4;
             color:#000000;
         }
+        .logo-img {
+            filter: invert(8%) sepia(100%) saturate(7122%) hue-rotate(309deg) brightness(67%) contrast(101%);
+        }
     }
+    
     //Intro
     .howitworks {
         background: linear-gradient(135deg, #ebace5, #90e6e6);

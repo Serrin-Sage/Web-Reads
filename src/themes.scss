@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    height: 100vh;
     cursor: default;
 }
 
@@ -52,7 +51,6 @@
 }
 
 .color-switcher.default-theme {
-    background-color: #4eb5f1;
     .content-box {
         color: #000000;
         text-decoration: underline;
@@ -62,21 +60,20 @@
     }
 }
 
-.color-switcher.dark-theme {
-    background-color: rgb(75, 75, 75);
+// .color-switcher.dark-theme {
+//     background-color: rgb(75, 75, 75);
     
-    .content-box {
-        color: white;
-        text-decoration: underline;
-    }
-    .theme-text {
-        background-color: #444444;
-        color: white;
-    }
-}
+//     .content-box {
+//         color: white;
+//         text-decoration: underline;
+//     }
+//     .theme-text {
+//         background-color: #444444;
+//         color: white;
+//     }
+// }
 
 .color-switcher.colorful-theme {
-    background-color: pink;
     .content-box {
         color: rgb(148, 5, 148);
         text-decoration: underline;
@@ -165,6 +162,7 @@
     .user-page-container {
         .side-bar-nav {
             background-color: black;
+            
             .settings-text {
                 background: linear-gradient(#838383, #333333);
                 border: none;
@@ -177,7 +175,18 @@
             background: linear-gradient(135deg, #444444, #888888);
         }
     }
-
+    .settings {
+        transition: 0.8s;
+        background-color: rgb(75, 75, 75);
+        .content-box {
+            color: white;
+            text-decoration: underline;
+        }
+        .theme-text {
+            background-color: #444444;
+            color: white;
+        }
+    }
 }
 
 .Footer.dark-theme {
@@ -292,7 +301,17 @@
             background: linear-gradient(270deg, #90e6e6, #ebace5);
         }
     }
-
+    .settings {
+        background-color: pink;
+        .content-box {
+            color: rgb(148, 5, 148);
+            text-decoration: underline;
+        }
+        .theme-text {
+            background-color: rgb(247, 156, 171);
+            color: rgb(148, 5, 148);
+        }
+    }
 }
 
 .Footer.colorful-theme {

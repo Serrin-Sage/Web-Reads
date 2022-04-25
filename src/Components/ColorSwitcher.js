@@ -17,7 +17,7 @@ function ColorSwitcher({changeColor}) {
     const handleClick = (theme) => {
         setColorTheme(theme);
         localStorage.setItem('theme-color', theme);
-        changeColor(theme)
+        changeColor(theme);
     }
   return (
     <div className={`color-switcher ${colorTheme}`}>
@@ -34,9 +34,7 @@ function ColorSwitcher({changeColor}) {
             <div id='colorful-theme' 
                 onClick={() => handleClick('colorful-theme')}
                 className='active'/>
-            <div id='light-theme' 
-                onClick={() => handleClick('light-theme')}
-                className='active'/>
+            
         </div>
         <div className='theme-text'>
             Click the boxes above to select your theme!

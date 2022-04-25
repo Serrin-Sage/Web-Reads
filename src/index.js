@@ -5,6 +5,7 @@ import './about-style.css'
 import './user-style.css'
 import './search-bar.css'
 import './themes.scss'
+import './picswitch.scss'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

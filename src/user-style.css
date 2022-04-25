@@ -40,6 +40,13 @@
 
 }
 
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4eb5f1;
+    height: 100vh;
+}
 .settings-text{
     border-radius: 5px;
     border: 1px solid #9bc1ce;
@@ -61,6 +68,7 @@
 .settings-text:hover{
     background: linear-gradient(#4eb5f1, #98ceee); 
 }
+
 
 /***** MAIN PAGE *****/
 .main-user-page {

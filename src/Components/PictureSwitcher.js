@@ -26,12 +26,21 @@ function PictureSwitcher() {
             
           </div>
             <div className='picture-options'>
+              <div id='default-icon'
+                   onClick={() => handleClick('default-icon')}/>
               <div id='cat-icon'
                    onClick={() => handleClick('cat-icon')}/>
               <div id='dog-icon'
                    onClick={() => handleClick('dog-icon')}/>
-              <div id='default-icon'
-                   onClick={() => handleClick('default-icon')}/>
+              <div id='alien-icon'
+                   onClick={() => handleClick('alien-icon')}/>
+              <div id='monster-icon'
+                   onClick={() => handleClick('monster-icon')}/>
+              <div id='rabbit-icon'
+                   onClick={() => handleClick('rabbit-icon')}/>
+              <div id='writer-icon'
+                   onClick={() => handleClick('writer-icon')}/>
+              
             </div>
         </div>
         

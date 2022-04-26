@@ -27,6 +27,7 @@
     }
     #default-theme {
         background-color: #4eb5f1;
+        transition: 0.8s;
     }
     #dark-theme {
         background-color: rgb(44, 44, 44);
@@ -38,6 +39,10 @@
         background-color: #fff;
         border: 1px solid rgb(0, 0, 0);
     }
+}
+
+.settings {
+    transition: 0.8s;
 }
 
 .color-switcher {
@@ -186,6 +191,9 @@
             background-color: #444444;
             color: white;
         }
+        .pic-switch-title {
+            color: white;
+        }
     }
 }
 
@@ -309,6 +317,9 @@
         }
         .theme-text {
             background-color: rgb(247, 156, 171);
+            color: rgb(148, 5, 148);
+        }
+        .pic-switch-title {
             color: rgb(148, 5, 148);
         }
     }

@@ -19,11 +19,15 @@
 }
 
 .user-icon {
-    /* border-bottom: solid;
-    border-top: solid; */
-    /* border-style: solid;
-    border-width: 4px;
-    border-image: linear-gradient(135deg, #98ceee, #4eb5f1) 1; */
+    /* height: 100%;
+    width: 100%;
+    border-bottom: solid;
+    border-top: solid; 
+    border-style: solid;
+    border-width: 4px; */
+    /* border-image: linear-gradient(135deg, #98ceee, #4eb5f1) 1; */
+    width: 210;
+    padding: 1rem;
 }
 
 .user-default {

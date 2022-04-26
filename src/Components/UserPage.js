@@ -1,16 +1,25 @@
-import {React} from 'react'
+import {React, useState, useEffect} from 'react'
 import user_default from '../images/user_default.png'
 import { Link } from 'react-router-dom'
 import SearchBar from './SearchBar'
 import BookData from '../TestData.json'
 
 function UserPage() {
+    const [selectedPic, setPicture] = useState('')
+
+    useEffect(()=> {
+    const currentPicture = localStorage.getItem('profile-picture');
+    if (currentPicture) {
+      setPicture(currentPicture);
+    }
+  }, [selectedPic])
+
   return (
     <div>
         <div className='user-page-container'>
             <div className='side-bar-nav'>
-                <div className='user-icon'>
-                    <img src={user_default} alt="DEFAULT_USER_IMG" className='user-default' />
+                <div className={`user-icon ${selectedPic}`}>
+                    {/* <img src={user_default} alt="DEFAULT_USER_IMG" className='user-default' /> */}
                 </div>
                 <div className='side-bar-nav-options'>
                     <Link to="/userpage" className='settings-text'>Profile</Link>

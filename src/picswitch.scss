@@ -25,10 +25,12 @@
 .picture-options {
     display: flex;
     flex-direction: row;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: right;
     padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
     div {
         cursor: pointer;
         width: 52px;

@@ -41,7 +41,8 @@
         display: inline-block;
 
         &.active {
-           border-color: black;
+           opacity: 0.5;
+           border-color: red;
         }
     }
     #default-icon {

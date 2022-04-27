@@ -2,7 +2,7 @@
     display: flex;
     background-color: rgb(255, 255, 255);
     height: 100vh;
-
+    width: 100vw;
 }
 
 /***** SIDE BAR NAV *****/

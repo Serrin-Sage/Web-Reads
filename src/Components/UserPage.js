@@ -1,12 +1,12 @@
 import {React, useState, useEffect} from 'react'
-import user_default from '../images/user_default.png'
+// import user_default from '../images/user_default.png'
 import { Link } from 'react-router-dom'
 import SearchBar from './SearchBar'
 import BookData from '../TestData.json'
 
 function UserPage() {
     const [selectedPic, setPicture] = useState('')
-
+    
     useEffect(()=> {
     const currentPicture = localStorage.getItem('profile-picture');
     if (currentPicture) {
@@ -14,6 +14,7 @@ function UserPage() {
     }
   }, [selectedPic])
 
+    
   return (
     <div>
         <div className='user-page-container'>
@@ -25,6 +26,8 @@ function UserPage() {
                     <Link to="/userpage" className='settings-text'>Profile</Link>
                     <Link to="/settings" className='settings-text'>Settings</Link>
                     <Link to="/booklist" className='settings-text'>Book List</Link>
+                    <Link to="/signin" className='settings-text'>Log Out</Link>
+                    {/* Logout does not currently log out the user, simply links back to sign in page*/}
                 </div>
             </div>
             <div className='main-user-page'>

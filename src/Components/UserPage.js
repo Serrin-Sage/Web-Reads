@@ -5,6 +5,7 @@ import SearchBar from './SearchBar'
 import BookData from '../TestData.json'
 
 function UserPage() {
+    // const navigate=useNavigate()(); 
     const [selectedPic, setPicture] = useState('')
     
     useEffect(()=> {
@@ -13,6 +14,13 @@ function UserPage() {
       setPicture(currentPicture);
     }
   }, [selectedPic])
+  
+  //delete user info from local storage
+  const logout = () => {
+    localStorage.removeItem('userInfo');
+  };
+
+  const user = JSON.parse(localStorage.getItem('userInfo'));
 
     
   return (
@@ -26,7 +34,9 @@ function UserPage() {
                     <Link to="/userpage" className='settings-text'>Profile</Link>
                     <Link to="/settings" className='settings-text'>Settings</Link>
                     <Link to="/booklist" className='settings-text'>Book List</Link>
-                    <Link to="/signin" className='settings-text'>Log Out</Link>
+                    <Link to="/" className='settings-text'>
+                        <button onClickCapture={logout}>Logout </button>
+                    </Link>
                     {/* Logout does not currently log out the user, simply links back to sign in page*/}
                 </div>
             </div>
@@ -35,10 +45,10 @@ function UserPage() {
                     Your Profile
                     <div className='profile-container'>
                         <div className='username-display'>
-                            UserName
+                            Welcome, {user.name} !
                         </div>
                         <div className='email-display'>
-                            Email@email.com
+                            {user.email}
                         </div>
                     </div>
                     Liked Books:

@@ -6,9 +6,6 @@ const ContactUs = () => {
             <Link to="/contactus" className="contact">
                 Contact Us
             </Link>
-            <Link to="/userpage" className="user-goto">
-                DEV 
-            </Link>
         </div>
         
     )

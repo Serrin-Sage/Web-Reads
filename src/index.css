@@ -268,16 +268,21 @@ button:active {
     padding: 2rem;
     background-color: #A7DAF8;
     z-index: 99;
+    text-align: center;
 }
 
 .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
+    text-align: center;
 }
 
 .contact {
     text-decoration: none;
     font-weight: bold;
-    padding-right: 1rem;
+    text-align: center;
 }
 
 .contact:hover {

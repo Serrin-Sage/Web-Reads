@@ -17,6 +17,12 @@ function Settings({changeColor}) {
   const updatePic = (newProfilePic) => {
     setPicture(newProfilePic)
   }
+
+  const logout = () => {
+    localStorage.removeItem('userInfo');
+  };
+
+  
   return (
     
     <div className='user-page-container'>
@@ -28,7 +34,9 @@ function Settings({changeColor}) {
             <Link to="/userpage" className='settings-text'>Profile</Link>
             <Link to="/settings" className='settings-text'>Settings</Link>
             <Link to="/booklist" className='settings-text'>Book List</Link>
-            <Link to="/signin" className='settings-text'>Log Out</Link>
+            <Link to="/" >
+                <button className='settings-text' onClickCapture={logout}>Logout </button>
+            </Link>
             {/* Logout does not currently log out the user, simply links back to sign in page*/}
         </div>
     </div>

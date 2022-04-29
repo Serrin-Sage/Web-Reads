@@ -67,6 +67,7 @@
     width: 140px;
     height: 60px;
     transition: 0.8s;
+    cursor: pointer;
 }
 
 .settings-text:hover{

@@ -34,8 +34,8 @@ function UserPage() {
                     <Link to="/userpage" className='settings-text'>Profile</Link>
                     <Link to="/settings" className='settings-text'>Settings</Link>
                     <Link to="/booklist" className='settings-text'>Book List</Link>
-                    <Link to="/" className='settings-text'>
-                        <button onClickCapture={logout}>Logout </button>
+                    <Link to="/" >
+                        <button className='settings-text' onClickCapture={logout}>Logout </button>
                     </Link>
                     {/* Logout does not currently log out the user, simply links back to sign in page*/}
                 </div>

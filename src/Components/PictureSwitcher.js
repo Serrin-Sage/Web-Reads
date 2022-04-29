@@ -19,7 +19,7 @@ function PictureSwitcher({changePic}) {
   return (
     <div className='picture-switcher'>
         <div className='pic-switch-title'>
-          <h3>Profile Image Selection</h3>
+          <h3>Profile Icon Selection</h3>
         </div>  
         <div className='profile-pic-container'> 
           {/* <div className={`main-profile-pic ${selectedPic}`}>

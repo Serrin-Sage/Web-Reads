@@ -168,6 +168,7 @@
     .user-page-container {
         .side-bar-nav {
             background-color: black;
+            transition: 0.8s;
             
             .settings-text {
                 background: linear-gradient(#838383, #333333);
@@ -335,6 +336,9 @@
         .contact:hover {
             color: white;
         }
+    }
+    .abtus-title {
+        color: rgb(132, 0, 255);
     }
     #abt-serrin {
         background-color: #E0B4E6;

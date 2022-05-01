@@ -31,13 +31,14 @@
     }
     #dark-theme {
         background-color: rgb(44, 44, 44);
+        transition: 0.8s;
     }
     #colorful-theme {
-        background-color: pink;
+        background: linear-gradient(to bottom right,pink 45%, #90e6e6 55%);
+        transition: 0.8s;
     }
-    #light-theme {
-        background-color: #fff;
-        border: 1px solid rgb(0, 0, 0);
+    #hunter-theme {
+        background: linear-gradient(to bottom right,gold, purple, white);
     }
 }
 
@@ -66,18 +67,6 @@
     }
 }
 
-// .color-switcher.dark-theme {
-//     background-color: rgb(75, 75, 75);
-    
-//     .content-box {
-//         color: white;
-//         text-decoration: underline;
-//     }
-//     .theme-text {
-//         background-color: #444444;
-//         color: white;
-//     }
-// }
 
 .color-switcher.colorful-theme {
     .content-box {
@@ -90,17 +79,7 @@
     }
 }
 
-.color-switcher.light-theme {
-    background-color: white;
-    .content-box {
-        color: rgb(0, 0, 0);
-        text-decoration: underline;
-    }
-    .theme-text {
-        background-color: rgb(190, 190, 190);
-        color: rgb(0, 0, 0);
-    }
-}
+
 
 
 //******** THEMES *********//
@@ -311,6 +290,7 @@
             background: linear-gradient(270deg, #90e6e6, #ebace5);
         }
     }
+    //Settings
     .settings {
         background-color: pink;
         .content-box {
@@ -332,6 +312,142 @@
         background-color: #46a0ac;
         .contact {
             color: rgb(132, 0, 255);
+        }
+        .contact:hover {
+            color: white;
+        }
+    }
+    .abtus-title {
+        color: rgb(132, 0, 255);
+    }
+    #abt-serrin {
+        background-color: #E0B4E6;
+        color: white;
+        
+    }
+    #abt-sadia {
+        background-color: #90E6E6;
+        color: white;
+        
+    }
+    #abt-chris {
+        background-color: #E0B4E6;
+        color: white;
+        
+    }
+    #abt-aida {
+        background-color: #90E6E6;
+        color: white;
+        
+    }
+
+    .link-icon {
+        color: white;
+    }
+}
+
+//===== HUNTER THEME =====//
+.App.hunter-theme{
+    transition: 0.8s;
+    //Header
+    .header {
+        background-color: #ffffff;
+        transition: 0.8s;
+        .signinbtn {
+            background-color: #751485;
+            border: 1px solid #751485;
+            transition: 0.5s;
+            color: #ffffff;
+        }
+        .signinbtn:hover {
+            background-color: #ffffff;
+            color:#000000;
+        }
+        .signupbtn {
+            background-color: #751485;
+            border: 1px solid #751485;
+            transition: 0.5s;
+            color: #ffffff;
+        }
+        .signupbtn:hover {
+            background-color: #ffffff;
+            color:#000000;
+        }
+        .logo-img {
+            filter: invert(13%) sepia(93%) saturate(2303%) hue-rotate(278deg) brightness(104%) contrast(105%);
+        }
+    }
+    
+    //Intro
+    .howitworks {
+        background: linear-gradient(135deg, #751485, #922ca1);
+    }
+    //Sign-in/up Forms
+    .formcontainer {
+        background: linear-gradient(135deg, #ffffff, #ffffff);
+        h2 {
+            color: rgba(255, 255, 255);
+        }
+        .app-wrapper {
+            background-color: rgb(106, 0, 155);
+        }
+        .form-field {
+            color:white;
+        }
+        .submit {
+            background-color: rgb(255, 255, 255);;
+            color: rgb(106, 0, 155);
+            border: none;
+        }
+        .submit:hover {
+            background-color: rgb(150, 0, 219);
+            color: rgb(255, 255, 255);
+        }
+        .bottom-text {
+            color: white;
+        }
+    }
+
+    //Profile page
+    .user-page-container {
+        .side-bar-nav {
+            background-color: rgb(106, 0, 155);
+            .settings-text {
+                background: #751485;
+                border: none;
+                color: rgb(252, 252, 252);
+            }
+            .settings-text:hover{
+                background: linear-gradient(135deg, #751485, #450c4e);
+            }
+        }
+        .main-user-page {
+            // background: linear-gradient(270deg, #751485, #450c4e);
+            background-color: white;
+        }
+    }
+    //Settings
+    .settings {
+        background-color: rgb(255, 255, 255);
+        .content-box {
+            color: rgb(106, 0, 155);
+            text-decoration: underline;
+        }
+        .theme-text {
+            background-color: rgb(106, 0, 155);
+            color: rgb(255, 208, 0);
+        }
+        .pic-switch-title {
+            color: rgb(106, 0, 155);
+        }
+    }
+}
+
+.Footer.hunter-theme {
+    .footer {
+        background-color: rgb(106, 0, 155);
+        .contact {
+            color: rgb(255, 208, 0);
         }
         .contact:hover {
             color: white;

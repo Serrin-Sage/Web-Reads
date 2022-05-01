@@ -21,11 +21,10 @@ function PictureSwitcher({changePic}) {
         <div className='pic-switch-title'>
           <h3>Profile Icon Selection</h3>
         </div>  
-        <div className='profile-pic-container'> 
-          {/* <div className={`main-profile-pic ${selectedPic}`}>
-            
-          </div> */}
+        <div className='profile-pic-container'>
+        <h3>Default</h3> 
             <div className='picture-options'>
+               
               <div id='default-icon'
                    onClick={() => handleClick('default-icon')}
                    className={`${selectedPic === 'default-icon' ? 'active' : ''}`}/>
@@ -47,6 +46,12 @@ function PictureSwitcher({changePic}) {
               <div id='writer-icon'
                    onClick={() => handleClick('writer-icon')}
                    className={`${selectedPic === 'writer-icon' ? 'active' : ''}`}/>
+              <div id='stormtrooper-icon'
+                   onClick={() => handleClick('stormtrooper-icon')}
+                   className={`${selectedPic === 'stormtrooper-icon' ? 'active' : ''}`}/>
+              <div id='hunter-icon'
+                   onClick={() => handleClick('hunter-icon')}
+                   className={`${selectedPic === 'hunter-icon' ? 'active' : ''}`}/>
               
             </div>
         </div>

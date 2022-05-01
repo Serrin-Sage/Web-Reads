@@ -81,55 +81,18 @@
         background-size: 50px;
         background-repeat: no-repeat;
     }
+    #stormtrooper-icon {
+        background-image: url('images/stormtrooper-icon.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #hunter-icon {
+        background-image: url('images/hunter-icon.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
 }
 
-.main-profile-pic.cat-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/happy.png');
-    background-repeat: no-repeat;
-}
-
-.main-profile-pic.dog-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/dog-icon.png');
-    background-repeat: no-repeat;
-}
-
-.main-profile-pic.default-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/user-default-gray.png');
-    background-repeat: no-repeat;
-}
-
-.main-profile-pic.alien-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/cute-alien-icon.png');
-    background-repeat: no-repeat;
-}
-
-.main-profile-pic.monster-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/monster-icon.png');
-    background-repeat: no-repeat;
-}
-
-.main-profile-pic.rabbit-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100px;
-    background-image: url('images/rabbit-icon.png');
-    background-repeat: no-repeat;
-}
 
 .main-profile-pic.writer-icon {
     height: 100px;
@@ -199,5 +162,23 @@
     background-size: 120px;
     margin-top: 2rem;
     background-image: url('images/shakespeare-icon.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.stormtrooper-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('images/stormtrooper-icon.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.hunter-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('images/hunter-icon.png');
     background-repeat: no-repeat;
 }

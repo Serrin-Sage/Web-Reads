@@ -34,6 +34,9 @@ function ColorSwitcher({changeColor}) {
             <div id='colorful-theme' 
                 onClick={() => handleClick('colorful-theme')}
                 className='active'/>
+            <div id='hunter-theme' 
+                onClick={() => handleClick('hunter-theme')}
+                className='active'/>
             
         </div>
         <div className='theme-text'>

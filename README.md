@@ -18,8 +18,8 @@ and
 
 ```npm install @material-ui/icons```
 
-To view development of User Profile: 
+Other Dependencies:
 
-press the ```~``` (tilde) key 
+```npm install sass```
 
-```(SHIFT + `)```
+```npm install axios```

@@ -26,7 +26,9 @@ function PictureSwitcher({changePic}) {
             <div className='default-picture-options'>
               <div id='default-icon'
                    onClick={() => handleClick('default-icon')}
-                   className={`${selectedPic === 'default-icon' ? 'active' : ''}`}/>
+                   className={`${selectedPic === 'default-icon' ? 'active' : ''}`}>
+                     <span className='hover-text'>Default</span>
+                   </div>
               <div id='cat-icon'
                    onClick={() => handleClick('cat-icon')}
                    className={`${selectedPic === 'cat-icon' ? 'active' : ''}`}/>

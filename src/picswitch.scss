@@ -88,6 +88,25 @@
     }
 }
 
+#default-icon .hover-text {
+  visibility: hidden;
+  width: 120px;
+  
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+#default-icon:hover .hover-text {
+    visibility: visible;
+}
+
 .main-profile-pic.writer-icon {
     height: 100px;
     width: 100px;

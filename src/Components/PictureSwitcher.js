@@ -23,8 +23,7 @@ function PictureSwitcher({changePic}) {
         </div>  
         <div className='profile-pic-container'>
         <h3>Default</h3> 
-            <div className='picture-options'>
-               
+            <div className='default-picture-options'>
               <div id='default-icon'
                    onClick={() => handleClick('default-icon')}
                    className={`${selectedPic === 'default-icon' ? 'active' : ''}`}/>
@@ -46,13 +45,55 @@ function PictureSwitcher({changePic}) {
               <div id='writer-icon'
                    onClick={() => handleClick('writer-icon')}
                    className={`${selectedPic === 'writer-icon' ? 'active' : ''}`}/>
-              <div id='stormtrooper-icon'
+              
+            </div>
+          <h3>Random</h3> 
+            <div className='random-picture-options'>
+               <div id='stormtrooper-icon'
                    onClick={() => handleClick('stormtrooper-icon')}
                    className={`${selectedPic === 'stormtrooper-icon' ? 'active' : ''}`}/>
               <div id='hunter-icon'
                    onClick={() => handleClick('hunter-icon')}
                    className={`${selectedPic === 'hunter-icon' ? 'active' : ''}`}/>
-              
+            </div>
+            <h3>Flags</h3>
+            <div className='flag-picture-options'>
+               <div id='australia-icon'
+                   onClick={() => handleClick('australia-icon')}
+                   className={`${selectedPic === 'australia-icon' ? 'active' : ''}`}/>
+               <div id='brazil-icon'
+                   onClick={() => handleClick('brazil-icon')}
+                   className={`${selectedPic === 'brazil-icon' ? 'active' : ''}`}/>
+               <div id='canada-icon'
+                   onClick={() => handleClick('canada-icon')}
+                   className={`${selectedPic === 'canada-icon' ? 'active' : ''}`}/>
+               <div id='china-icon'
+                   onClick={() => handleClick('china-icon')}
+                   className={`${selectedPic === 'china-icon' ? 'active' : ''}`}/>
+               <div id='egypt-icon'
+                   onClick={() => handleClick('egypt-icon')}
+                   className={`${selectedPic === 'egypt-icon' ? 'active' : ''}`}/>
+               <div id='france-icon'
+                   onClick={() => handleClick('france-icon')}
+                   className={`${selectedPic === 'france-icon' ? 'active' : ''}`}/>
+               <div id='germany-icon'
+                   onClick={() => handleClick('germany-icon')}
+                   className={`${selectedPic === 'germany-icon' ? 'active' : ''}`}/>
+               <div id='india-icon'
+                   onClick={() => handleClick('india-icon')}
+                   className={`${selectedPic === 'india-icon' ? 'active' : ''}`}/>
+               <div id='italy-icon'
+                   onClick={() => handleClick('italy-icon')}
+                   className={`${selectedPic === 'italy-icon' ? 'active' : ''}`}/>
+               <div id='japan-icon'
+                   onClick={() => handleClick('japan-icon')}
+                   className={`${selectedPic === 'japan-icon' ? 'active' : ''}`}/>
+               <div id='mexico-icon'
+                   onClick={() => handleClick('mexico-icon')}
+                   className={`${selectedPic === 'mexico-icon' ? 'active' : ''}`}/>
+               <div id='nepal-icon'
+                   onClick={() => handleClick('nepal-icon')}
+                   className={`${selectedPic === 'nepal-icon' ? 'active' : ''}`}/>
             </div>
         </div>
         

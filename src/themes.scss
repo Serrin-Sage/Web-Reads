@@ -38,7 +38,8 @@
         transition: 0.8s;
     }
     #hunter-theme {
-        background: linear-gradient(to bottom right,gold, purple, white);
+        background: linear-gradient(to bottom right, purple 45%, white 55%);
+        border-color: black;
     }
 }
 
@@ -173,6 +174,9 @@
             color: white;
         }
         .pic-switch-title {
+            color: white;
+        }
+        h3 {
             color: white;
         }
     }
@@ -435,11 +439,12 @@
         }
         .theme-text {
             background-color: rgb(106, 0, 155);
-            color: rgb(255, 208, 0);
+            color: rgb(255, 255, 255);
         }
         .pic-switch-title {
             color: rgb(106, 0, 155);
         }
+        
     }
 }
 

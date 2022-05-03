@@ -16,13 +16,8 @@
     align-items: center;
 }
 
-// .main-profile-pic {
-//     background-image: url('./images/user_default.png');
-//     background-repeat: no-repeat;
-//     background-size: 70px;
-// }
-
-.picture-options {
+//******** DEFAULT PIC OPTIONS ********//
+.default-picture-options {
     display: flex;
     flex-direction: row;
     max-width: 400px;
@@ -46,59 +41,58 @@
         }
     }
     #default-icon {
-        background-image: url('images/user-default-gray.png');
+        background-image: url('icons/user-default-gray.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
    
     #cat-icon {
-        background-image: url('images/happy.png');
+        background-image: url('icons/happy.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #dog-icon {
-        background-image: url('images/dog-icon.png');
+        background-image: url('icons/dog-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #alien-icon {
-        background-image: url('images/cute-alien-icon.png');
+        background-image: url('icons/cute-alien-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #monster-icon {
-        background-image: url('images/monster-icon.png');
+        background-image: url('icons/monster-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #rabbit-icon {
-        background-image: url('images/rabbit-icon.png');
+        background-image: url('icons/rabbit-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #writer-icon {
-        background-image: url('images/shakespeare-icon.png');
+        background-image: url('icons/shakespeare-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #stormtrooper-icon {
-        background-image: url('images/stormtrooper-icon.png');
+        background-image: url('icons/stormtrooper-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
     #hunter-icon {
-        background-image: url('images/hunter-icon.png');
+        background-image: url('icons/hunter-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
 }
 
-
 .main-profile-pic.writer-icon {
     height: 100px;
     width: 100px;
     background-size: 100px;
-    background-image: url('images/shakespeare-icon.png');
+    background-image: url('icons/shakespeare-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -107,7 +101,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/happy.png');
+    background-image: url('icons/happy.png');
     background-repeat: no-repeat;
 }
 
@@ -116,7 +110,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/dog-icon.png');
+    background-image: url('icons/dog-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -125,7 +119,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/user-default-gray.png');
+    background-image: url('icons/user-default-gray.png');
     background-repeat: no-repeat;
 }
 
@@ -134,7 +128,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/cute-alien-icon.png');
+    background-image: url('icons/cute-alien-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -143,7 +137,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/monster-icon.png');
+    background-image: url('icons/monster-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -152,7 +146,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/rabbit-icon.png');
+    background-image: url('icons/rabbit-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -161,8 +155,44 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/shakespeare-icon.png');
+    background-image: url('icons/shakespeare-icon.png');
     background-repeat: no-repeat;
+}
+
+//******** RANDOM PIC OPTIONS ********//
+.random-picture-options {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+        cursor: pointer;
+        width: 52px;
+        height: 52px;
+        border-radius: 4px;
+        margin: 2px 10px 10px;
+        border: 1px solid #fff;
+        display: inline-block;
+
+        &.active {
+            opacity: 0.5;
+            border-color: red;
+        }
+    }
+    #stormtrooper-icon {
+        background-image: url('icons/stormtrooper-icon.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #hunter-icon {
+        background-image: url('icons/hunter-icon.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
 }
 
 .user-icon.stormtrooper-icon {
@@ -170,7 +200,7 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/stormtrooper-icon.png');
+    background-image: url('icons/stormtrooper-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -179,6 +209,202 @@
     width: 120px;
     background-size: 120px;
     margin-top: 2rem;
-    background-image: url('images/hunter-icon.png');
+    background-image: url('icons/hunter-icon.png');
+    background-repeat: no-repeat;
+}
+
+
+//******** FLAG PIC OPTIONS ********//
+.flag-picture-options {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+        cursor: pointer;
+        width: 52px;
+        height: 52px;
+        border-radius: 4px;
+        margin: 2px 10px 10px;
+        border: 1px solid #fff;
+        display: inline-block;
+
+        &.active {
+            opacity: 0.5;
+            border-color: red;
+        }
+    }
+    #australia-icon {
+        background-image: url('flag-icons/australia.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #brazil-icon {
+        background-image: url('flag-icons/brazil.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #canada-icon {
+        background-image: url('flag-icons/canada.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #china-icon {
+        background-image: url('flag-icons/china.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #egypt-icon {
+        background-image: url('flag-icons/egypt.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #france-icon {
+        background-image: url('flag-icons/france.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #germany-icon {
+        background-image: url('flag-icons/germany.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #india-icon {
+        background-image: url('flag-icons/india.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #italy-icon {
+        background-image: url('flag-icons/italy.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #japan-icon {
+        background-image: url('flag-icons/japan.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #mexico-icon {
+        background-image: url('flag-icons/mexico.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #nepal-icon {
+        background-image: url('flag-icons/nepal.png');
+        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.user-icon.australia-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/australia.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.brazil-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/brazil.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.canada-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/canada.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.china-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/china.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.egypt-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/egypt.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.france-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/france.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.germany-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/germany.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.india-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/india.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.italy-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/italy.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.japan-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/japan.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.mexico-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/mexico.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.nepal-icon {
+    height: 120px;
+    width: 120px;
+    background-size: 120px;
+    margin-top: 2rem;
+    background-image: url('flag-icons/nepal.png');
     background-repeat: no-repeat;
 }

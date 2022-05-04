@@ -25,7 +25,7 @@ function Settings({changeColor}) {
   
   return (
     
-    <div className='user-page-container'>
+  <div className='user-page-container'>
     <div className='side-bar-nav'>
         <div className={`user-icon ${selectedPic}`}>
             {/* <img src={user_default} alt="DEFAULT_USER_IMG" className='user-default' /> */}

@@ -211,6 +211,11 @@ function PictureSwitcher({changePic}) {
                    className={`icon-div ${selectedPic === 'united-states-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>USA</span>
                </div>
+               <div id='pride-icon'
+                   onClick={() => handleClick('pride-icon')}
+                   className={`icon-div ${selectedPic === 'pride-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>LGBT Pride</span>
+               </div>
             </div>
         </div>
         

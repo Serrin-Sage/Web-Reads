@@ -323,6 +323,10 @@
         background-image: url('flag-icons/united-states-of-america.png');
     }
 
+    #pride-icon {
+        background-image: url('flag-icons/pride.png');
+    }
+
 }
 
 .user-icon.australia-icon {
@@ -459,5 +463,10 @@
 
 .user-icon.united-states-icon {
     background-image: url('flag-icons/united-states-of-america.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.pride-icon {
+    background-image: url('flag-icons/pride.png');
     background-repeat: no-repeat;
 }

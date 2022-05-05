@@ -143,7 +143,15 @@ h2 {
     /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, */
 }
 
-/* sign up/in forms */
+.static {
+    position: absolute;
+    background: white;
+}
+
+.static:hover {
+    opacity: 0;
+}
+/******** SIGN-UP/IN FORMS ********/
 
 .formcontainer {
     background: linear-gradient(135deg, #98ceee, #4eb5f1);
@@ -374,29 +382,3 @@ button:active {
     width: 25%;
     margin: auto;
 }
-
-/******** USER PAGE *******/
-
-/* .settings-text{
-    border-radius: 5px;
-    border: 1px solid #9bc1ce;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#4eb5f1;
-    text-align:center;
-    transition: all 0.2s;
-    padding:0.5em 1.4em;
-    margin: 10px;
-    width: 140px;
-}
-
-.settings-text:hover{
-    background-color:#4095c6;
-}
-
-.side-bar-nav{
-    border: none;
-} */

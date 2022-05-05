@@ -214,7 +214,7 @@ function PictureSwitcher({changePic}) {
                <div id='pride-icon'
                    onClick={() => handleClick('pride-icon')}
                    className={`icon-div ${selectedPic === 'pride-icon' ? 'active' : ''}`}>
-                    <span className='hover-text'>LGBT Pride</span>
+                    <span className='hover-text'>LGBTQ Pride</span>
                </div>
             </div>
         </div>

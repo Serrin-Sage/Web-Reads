@@ -429,15 +429,14 @@
             }
         }
         .main-user-page {
-            // background: linear-gradient(270deg, #751485, #450c4e);
-            background-color: white;
+            background: linear-gradient(135deg, #820096, #7e0591);
         }
     }
     //Settings
     .settings {
-        background-color: rgb(255, 255, 255);
+        background: linear-gradient(135deg, #820096, #7e0591);
         .content-box {
-            color: rgb(106, 0, 155);
+            color: rgb(255, 255, 255);
             text-decoration: underline;
         }
         .theme-text {
@@ -445,7 +444,7 @@
             color: rgb(255, 255, 255);
         }
         .pic-switch-title {
-            color: rgb(106, 0, 155);
+            color: rgb(255, 255, 255);
         }
         
     }
@@ -453,12 +452,12 @@
 
 .Footer.hunter-theme {
     .footer {
-        background-color: rgb(106, 0, 155);
+        background-color: rgb(255, 255, 255);
         .contact {
-            color: rgb(255, 208, 0);
+            color: rgb(132, 0, 255);
         }
         .contact:hover {
-            color: white;
+            color: rgb(0, 0, 0);
         }
     }
     .abtus-title {

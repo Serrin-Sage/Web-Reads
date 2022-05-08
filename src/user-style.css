@@ -1,14 +1,21 @@
 .user-page-container {
     display: flex;
     background-color: rgb(255, 255, 255);
-    height: fit-content;
+    height: auto;
     width: 100vw;
 }
 
-/***** SIDE BAR NAV *****/
-.side-bar-nav{
+.profile-page {
     height: auto;
-    width: 210px;
+}
+/***** SIDE BAR NAV *****/
+.side-bar-container {
+    height: auto;
+}
+
+.side-bar-nav{
+    height: 100%;
+    width: 200px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -17,13 +24,6 @@
 }
 
 .user-icon {
-    /* height: 100%;
-    width: 100%;
-    border-bottom: solid;
-    border-top: solid; 
-    border-style: solid;
-    border-width: 4px; */
-    /* border-image: linear-gradient(135deg, #98ceee, #4eb5f1) 1; */
     width: 210;
     padding: 1rem;
 }
@@ -42,6 +42,7 @@
 
 }
 
+
 .settings {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@
     background-color: #4eb5f1;
     height: auto;
     width: 100vw;
+    padding-right: 200px;
 }
 
 .settings-text{
@@ -79,7 +81,7 @@
 .main-user-page {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     justify-content: flex-start;
     font-size: 40px;
     flex-direction: column;
@@ -96,8 +98,6 @@
     text-align: center;
     padding: 35px;
     margin: 35px;
-    margin-left: auto;
-    margin-right: auto;
     background: white;
 }
 

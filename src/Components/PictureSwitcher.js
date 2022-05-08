@@ -11,6 +11,7 @@ function PictureSwitcher({changePic}) {
     }
   }, [selectedPic])
 
+
   const handleClick = (picture) => {
     setPicture(picture);
     localStorage.setItem('profile-picture', picture);

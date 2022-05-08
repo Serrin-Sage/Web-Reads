@@ -12,7 +12,12 @@
 }
 
 .abtus-title{
+    cursor: default;
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
     font-size: 60px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .about-container {

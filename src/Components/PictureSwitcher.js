@@ -60,8 +60,14 @@ function PictureSwitcher({changePic}) {
                    className={`icon-div ${selectedPic === 'writer-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>Writer</span>
               </div>
+              <div id='book-icon'
+                   onClick={() => handleClick('book-icon')}
+                   className={`icon-div ${selectedPic === 'book-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Books</span>
+              </div>
               
             </div>
+
           <h3>Random</h3> 
             <div className='random-picture-options'>
                <div id='stormtrooper-icon'
@@ -74,13 +80,29 @@ function PictureSwitcher({changePic}) {
                    className={`icon-div ${selectedPic === 'hunter-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>Hunter</span>
                </div>
+              <div id='triforce-icon'
+                   onClick={() => handleClick('triforce-icon')}
+                   className={`icon-div ${selectedPic === 'triforce-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Triforce</span>
+               </div>
+              <div id='calvin-icon'
+                   onClick={() => handleClick('calvin-icon')}
+                   className={`icon-div ${selectedPic === 'calvin-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Calvin</span>
+               </div>
             </div>
+
           <h3>Flags</h3>
             <div className='flag-picture-options'>
                <div id='australia-icon'
                    onClick={() => handleClick('australia-icon')}
                    className={`icon-div ${selectedPic === 'australia-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>Australia</span>
+               </div>
+               <div id='austria-icon'
+                   onClick={() => handleClick('austria-icon')}
+                   className={`icon-div ${selectedPic === 'austria-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Austria</span>
                </div>
                <div id='bangladesh-icon'
                    onClick={() => handleClick('bangladesh-icon')}
@@ -101,6 +123,16 @@ function PictureSwitcher({changePic}) {
                    onClick={() => handleClick('china-icon')}
                    className={`icon-div ${selectedPic === 'china-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>China</span>
+               </div>
+               <div id='colombia-icon'
+                   onClick={() => handleClick('colombia-icon')}
+                   className={`icon-div ${selectedPic === 'colombia-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Colombia</span>
+               </div>
+               <div id='denmark-icon'
+                   onClick={() => handleClick('denmark-icon')}
+                   className={`icon-div ${selectedPic === 'denmark-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Denmark</span>
                </div>
                <div id='egypt-icon'
                    onClick={() => handleClick('egypt-icon')}
@@ -151,6 +183,11 @@ function PictureSwitcher({changePic}) {
                    onClick={() => handleClick('philippines-icon')}
                    className={`icon-div ${selectedPic === 'philippines-icon' ? 'active' : ''}`}>
                     <span className='hover-text'>Philippines</span>
+               </div>
+               <div id='poland-icon'
+                   onClick={() => handleClick('poland-icon')}
+                   className={`icon-div ${selectedPic === 'poland-icon' ? 'active' : ''}`}>
+                    <span className='hover-text'>Poland</span>
                </div>
                <div id='russia-icon'
                    onClick={() => handleClick('russia-icon')}

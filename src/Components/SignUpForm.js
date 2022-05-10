@@ -128,7 +128,7 @@ function SignUpForm() {
                     {errormessage}
                 </form>
                 <div>
-                <p>Already have an account? Sign in <Link to='/signin' >
+                <p className="bottom-text">Already have an account? Sign in <Link to='/signin' >
                 here!</Link>
                 </p>
                 </div>

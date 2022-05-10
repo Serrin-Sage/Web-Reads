@@ -27,6 +27,7 @@ function App() {
         }
     }, [colorTheme]);
 
+    
     //Updates selected Theme
     const updateTheme = (newColorTheme) => {
       setColorTheme(newColorTheme)
@@ -58,7 +59,7 @@ function App() {
             <SignInForm />
           } />
           <Route path='/userpage' element={
-            <UserPage />
+            <UserPage changeColor={updateTheme} />
           } />
           <Route path='/booklist' element={
             <BookList />
@@ -67,7 +68,7 @@ function App() {
             <Survey />
           } />
           <Route path='/settings' element={
-            <Settings changeColor={updateTheme}/>
+            <Settings />
           } />
         </Routes>
       </div>

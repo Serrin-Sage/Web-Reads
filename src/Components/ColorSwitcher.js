@@ -27,13 +27,24 @@ function ColorSwitcher({changeColor}) {
         <div className='theme-options'>
             <div id='default-theme' 
                 onClick={() => handleClick('default-theme')}
-                className='active'/>
+                className='icon-div active'>
+                <span className='hover-text'>Default</span>
+            </div>
             <div id='dark-theme' 
                 onClick={() => handleClick('dark-theme')}
-                className='active'/>
+                className='icon-div active'>
+                <span className='hover-text'>Dark</span>
+            </div>
             <div id='colorful-theme' 
                 onClick={() => handleClick('colorful-theme')}
-                className='active'/>
+                className='icon-div active'>
+                <span className='hover-text'>Colorful</span>
+            </div>
+            <div id='hunter-theme' 
+                onClick={() => handleClick('hunter-theme')}
+                className='icon-div active'>
+                <span className='hover-text'>Hunter</span>
+            </div>
             
         </div>
         <div className='theme-text'>

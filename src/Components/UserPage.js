@@ -1,12 +1,11 @@
 import {React, useState, useEffect} from 'react'
-// import user_default from '../images/user_default.png'
-import { Link } from 'react-router-dom'
-import SearchBar from './SearchBar'
-import BookData from '../TestData.json'
+import SideBarNav from './SideBarNav'
+import Settings from './Settings'
+import ProfilePage from './ProfilePage'
 
-function UserPage() {
+function UserPage({changeColor}) {
     // const navigate=useNavigate()(); 
-    const [selectedPic, setPicture] = useState('')
+    const [selectedPic, setPicture] = useState('user-default-gray')
     
     useEffect(()=> {
     const currentPicture = localStorage.getItem('profile-picture');
@@ -14,51 +13,26 @@ function UserPage() {
       setPicture(currentPicture);
     }
   }, [selectedPic])
-  
-  //delete user info from local storage
-  const logout = () => {
-    localStorage.removeItem('userInfo');
-  };
 
-  const user = JSON.parse(localStorage.getItem('userInfo'));
+  const [showProfile, setShowProfile] = useState(true)
+  const [showSettings, setShowSettings] = useState(true)
 
-    
-  return (
-    <div>
-        <div className='user-page-container'>
-            <div className='side-bar-nav'>
-                <div className={`user-icon ${selectedPic}`}>
-                    {/* <img src={user_default} alt="DEFAULT_USER_IMG" className='user-default' /> */}
-                </div>
-                <div className='side-bar-nav-options'>
-                    <Link to="/userpage" className='settings-text'>Profile</Link>
-                    <Link to="/settings" className='settings-text'>Settings</Link>
-                    <Link to="/booklist" className='settings-text'>Book List</Link>
-                    <Link to="/" className='settings-text'>
-                        <button onClickCapture={logout}>Logout </button>
-                    </Link>
-                    {/* Logout does not currently log out the user, simply links back to sign in page*/}
-                </div>
-            </div>
-            <div className='main-user-page'>
-                <div>
-                    Your Profile
-                    <div className='profile-container'>
-                        <div className='username-display'>
-                            Welcome, {user.name} !
-                        </div>
-                        <div className='email-display'>
-                            {user.email}
-                        </div>
-                    </div>
-                    Liked Books:
-                </div>
-                
-                <SearchBar placeholder="Enter a Book Title..." data={BookData}/>
-            </div>
+   //updates User Profile Pic
+   const updatePic = (newProfilePic) => {
+    setPicture(newProfilePic)
+  }
+
+  return ( 
+    <div className='user-page-container'>
+      
+        <SideBarNav changePic={selectedPic} setShowProfile={setShowProfile} setShowSettings={setShowSettings}/>
+        <div className='profile-page'>
+            { showProfile ? <ProfilePage /> : null }
+        </div>
+        <div className='settings-page'>
+            { showSettings ? <Settings changeColor={changeColor} changePic={updatePic}/> : null}
         </div>
     </div>
-    
   )
 }
 

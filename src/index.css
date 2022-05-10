@@ -143,6 +143,67 @@ h2 {
     /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, */
 }
 
+/********* SURVEY *********/
+
+.survey {
+    background: linear-gradient(135deg, #98ceee, #4eb5f1);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.survey-intro {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 600px;
+}
+
+.survey-intro h2 {
+    color: #4eb5f1;
+    text-align: center;
+}
+
+.survey-intro h3 {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.survey-submit {
+    display:flex;
+    padding: 10px 60px;
+    margin: auto;
+    margin-top:40px;
+    border-radius: 25px;
+    border: 1px solid #9bc1ce;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    color: #4eb5f1;
+    background-color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
 /* sign up/in forms */
 
 .formcontainer {

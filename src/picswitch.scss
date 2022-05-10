@@ -117,16 +117,12 @@
         background-size: 50px;
         background-repeat: no-repeat;
     }
-    #stormtrooper-icon {
-        background-image: url('icons/stormtrooper-icon.png');
+    #book-icon {
+        background-image: url('icons/book-stack-icon.png');
         background-size: 50px;
         background-repeat: no-repeat;
     }
-    #hunter-icon {
-        background-image: url('icons/hunter-icon.png');
-        background-size: 50px;
-        background-repeat: no-repeat;
-    }
+    
 }
 
 .user-icon.default-icon {
@@ -164,6 +160,11 @@
     background-repeat: no-repeat;
 }
 
+.user-icon.book-icon {
+    background-image: url('icons/book-stack-icon.png');
+    background-repeat: no-repeat;
+}
+
 //******** RANDOM PIC OPTIONS ********//
 .random-picture-options {
     display: flex;
@@ -178,6 +179,7 @@
         cursor: pointer;
         width: 52px;
         height: 52px;
+        background-size: 50px;
         border-radius: 4px;
         margin: 2px 10px 10px;
         border: 1px solid #fff;
@@ -192,12 +194,18 @@
     }
     #stormtrooper-icon {
         background-image: url('icons/stormtrooper-icon.png');
-        background-size: 50px;
         background-repeat: no-repeat;
     }
     #hunter-icon {
         background-image: url('icons/hunter-icon.png');
-        background-size: 50px;
+        background-repeat: no-repeat;
+    }
+    #triforce-icon {
+        background-image: url('icons/triforce-icon.png');
+        background-repeat: no-repeat;
+    }
+    #calvin-icon {
+        background-image: url('icons/calvin-icon-removebg.png');
         background-repeat: no-repeat;
     }
 }
@@ -210,6 +218,17 @@
 .user-icon.hunter-icon {
     background-image: url('icons/hunter-icon.png');
     background-repeat: no-repeat;
+}
+
+.user-icon.triforce-icon {
+    background-image: url('icons/triforce-icon.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.calvin-icon {
+    background-image: url('icons/calvin-icon-removebg.png');
+    background-repeat: no-repeat;
+    background-size: 140px;
 }
 
 
@@ -244,6 +263,9 @@
     #australia-icon {
         background-image: url('flag-icons/australia.png');
     }
+    #austria-icon {
+        background-image: url('flag-icons/austria.png');
+    }
     #bangladesh-icon {
         background-image: url('flag-icons/bangladesh.png');
     }
@@ -255,6 +277,12 @@
     }
     #china-icon {
         background-image: url('flag-icons/china.png');
+    }
+    #colombia-icon {
+        background-image: url('flag-icons/colombia.png');
+    }
+    #denmark-icon {
+        background-image: url('flag-icons/denmark.png');
     }
     #egypt-icon {
         background-image: url('flag-icons/egypt.png');
@@ -285,6 +313,9 @@
     }
     #philippines-icon {
         background-image: url('flag-icons/philippines.png');
+    }
+    #poland-icon {
+        background-image: url('flag-icons/poland.png');
     }
     #russia-icon {
         background-image: url('flag-icons/russia.png');
@@ -334,6 +365,11 @@
     background-repeat: no-repeat;
 }
 
+.user-icon.austria-icon {
+    background-image: url('flag-icons/austria.png');
+    background-repeat: no-repeat;
+}
+
 .user-icon.bangladesh-icon {
     background-image: url('flag-icons/bangladesh.png');
     background-repeat: no-repeat;
@@ -351,6 +387,16 @@
 
 .user-icon.china-icon {
     background-image: url('flag-icons/china.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.colombia-icon {
+    background-image: url('flag-icons/colombia.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.denmark-icon {
+    background-image: url('flag-icons/denmark.png');
     background-repeat: no-repeat;
 }
 
@@ -403,6 +449,11 @@
 
 .user-icon.philippines-icon {
     background-image: url('flag-icons/philippines.png');
+    background-repeat: no-repeat;
+}
+
+.user-icon.poland-icon {
+    background-image: url('flag-icons/poland.png');
     background-repeat: no-repeat;
 }
 

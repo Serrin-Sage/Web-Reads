@@ -53,6 +53,9 @@ function App() {
               <HowItWorks />
             </>
           } />
+          <Route path='/mlpage' element={
+            <MLpage />
+          } />
           <Route path='/signup' element={
             <SignUpForm />
           } />

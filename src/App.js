@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import BookList from "./Components/BookList";
 import Settings from "./Components/Settings";
 import { useEffect, useState } from 'react'
+import Survey from "./Components/Survey";
 
 
 function App() {
@@ -62,6 +63,9 @@ function App() {
           } />
           <Route path='/booklist' element={
             <BookList />
+          } />
+          <Route path='/survey' element={
+            <Survey />
           } />
           <Route path='/settings' element={
             <Settings />

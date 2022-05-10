@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import BookList from "./Components/BookList";
 import Settings from "./Components/Settings";
 import { useEffect, useState } from 'react'
+import MLpage from "./Components/MLpage";
 
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
               <Intro />
               <HowItWorks />
             </>
+          } />
+          <Route path='/mlpage' element={
+            <MLpage />
           } />
           <Route path='/signup' element={
             <SignUpForm />

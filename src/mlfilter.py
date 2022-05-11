@@ -55,7 +55,7 @@ def join2(a, b):
     shure.append(j[2])
   return(shure)
 
-bookL = open("../TestData.json")
+bookL = open("./TestData.json")
 after = json.load(bookL)
 mon = after[0]
 jol = mon['title']

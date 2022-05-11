@@ -26,6 +26,7 @@ function SideBarNav({setShowProfile, setShowSettings, changePic}) {
                 <button className='settings-text' onClick={() => {setShowProfile(true); setShowSettings(false)}}>Profile</button>
                 <button className='settings-text' onClick={() => {setShowSettings(true); setShowProfile(false)}}>Settings</button>
                 <Link to="/booklist" className='settings-text'>Book List</Link>
+                <Link to="/mlpage" className='settings-text'>ML Page</Link>
                 <Link to="/" >
                     <button className='settings-text' onClickCapture={logout}>Logout </button>
                 </Link>

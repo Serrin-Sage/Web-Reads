@@ -11,7 +11,7 @@ const HowItWorks = () => {
                 Step 1: Sign Up! 
                 <p className="step-description">Create a user name, fill in your email and make a Password!</p>
               </h2>
-              <img src={sign_up_gif} alt="test gif" className="sign-up-gif"/>
+              <img src={sign_up_gif} alt="sign-up gif" className="sign-up-gif"/>
               <h2 className="step-titles">
                 Step 2: Fill out our survey 
                 <p className="step-description">
@@ -27,7 +27,7 @@ const HowItWorks = () => {
                 Step 4: Customize your Profile! 
                 <p className="step-description">You can change the Theme and your Profile Icon!</p>
               </h2>
-              <img src={theme_change} alt="test gif" className="sign-up-gif"/>
+              <img src={theme_change} alt="profile gif" className="sign-up-gif"/>
           </div>
         </div>
     </div>

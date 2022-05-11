@@ -13,12 +13,12 @@ const AboutUs = () => {
             <h2 className="name-title">Serrin</h2>
             <p>Graduating from Hunter College in 2022. Currently employed at Brooklyn Game Labs. </p>
             <div className="nav-container">
-              <a href="https://github.com/" rel="noreferrer" target="_blank">
+              <a href="https://github.com/Serrin-Sage" rel="noreferrer" target="_blank">
                 <div className='link-icon' id='github-icon'>
                   <GitHubIcon />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/feed/" rel="noreferrer" target="_blank">
+              <a href="https://www.linkedin.com/in/serrin-doscher-2a0544224" rel="noreferrer" target="_blank">
                 <div className='link-icon' id='linkedin-icon'>
                   <LinkedInIcon />
                 </div>

@@ -11,7 +11,7 @@ function MLpage() {
     const [value, setValue] = useState("");
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:5000").then((response)=>{
+        axios.get("https://web-reads-ml.herokuapp.com/").then((response)=>{
             console.log(response)
             setValue(response)
         }).catch(error => {

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import SurveySearchBar from './SurveySearchBar';
+import BookData from '../TestData.json'
 
 function Survey() {
 
@@ -6,6 +8,16 @@ function Survey() {
     const [ans2, setAns2] = useState("");
     const [ans3, setAns3] = useState("");
     const [ans4, setAns4] = useState("");
+    const [ans5, setAns5] = useState("");
+
+    const handleSurveySubmit = async (e) => {
+        e.preventDefault();
+        window.location.href = '/userpage';
+    }
+
+    const changeAns1 = (value) => {
+        setAns1(value)
+    }
 
     return (
         <div className='survey'>
@@ -17,47 +29,27 @@ function Survey() {
 
                 <form onSubmit={""}>
                     <div className='card'>
-                        <label><h3>What is your favorite genre?</h3></label>
-                        <input 
-                            className="input" 
-                            type="text" 
-                            name="ans1" 
-                            value={ans1} 
-                            onChange={(e) => setAns1(e.target.value)} 
-                        />
+                        <label><h3>Please select a book:</h3></label>
+                        <SurveySearchBar placeholder="Enter a Book Title..." data={BookData} setAns={setAns1}/>
                     </div>
                     <div className='card'>
-                        <label><h3>What is your favorite author?</h3></label>
-                        <input 
-                            className="input" 
-                            type="text" 
-                            name="ans2" 
-                            value={ans2} 
-                            onChange={(e) => setAns2(e.target.value)} 
-                        />
+                        <label><h3>Please select a book:</h3></label>
+                        <SurveySearchBar placeholder="Enter a Book Title..." data={BookData} setAns={setAns2}/>
                     </div>
                     <div className='card'>
-                        <label><h3>What is your age?</h3></label>
-                        <input 
-                            className="input" 
-                            type="text" 
-                            name="ans3" 
-                            value={ans3} 
-                            onChange={(e) => setAns3(e.target.value)} 
-                        />
+                        <label><h3>Please select a book:</h3></label>
+                        <SurveySearchBar placeholder="Enter a Book Title..." data={BookData} setAns={setAns3}/>
                     </div>
                     <div className='card'>
-                        <label><h3>What is your gender?</h3></label>
-                        <input 
-                            className="input" 
-                            type="text" 
-                            name="ans4" 
-                            value={ans4} 
-                            onChange={(e) => setAns4(e.target.value)} 
-                        />
+                        <label><h3>Please select a book:</h3></label>
+                        <SurveySearchBar placeholder="Enter a Book Title..." data={BookData} setAns={setAns4}/>
+                    </div>
+                    <div className='card'>
+                        <label><h3>Please select a book:</h3></label>
+                        <SurveySearchBar placeholder="Enter a Book Title..." data={BookData} setAns={setAns5}/>
                     </div>
                     <div>
-                        <button className="survey-submit">Submit</button>
+                        <button className="survey-submit" onClick={handleSurveySubmit}>Submit</button>
                     </div>
 
                 </form>

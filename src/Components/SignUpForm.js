@@ -58,7 +58,7 @@ function SignUpForm() {
                 );
                 console.log(data);
                 localStorage.setItem("userInfo", JSON.stringify(data));
-                
+                window.location.href = '/survey';
             } catch (error) {
                 setErrors(error.response.data.message);
             }

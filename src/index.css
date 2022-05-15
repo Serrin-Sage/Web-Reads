@@ -510,9 +510,13 @@ button:active {
     width: 75%;
 }
 
-.fav-icon{
+.fav-icon-container{
     width: 25%;
     margin: auto;
+}
+
+.fav-icon{
+    cursor: pointer;
 }
 
 .list-search-input {

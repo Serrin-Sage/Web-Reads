@@ -22,7 +22,7 @@ function BookList() {
                         setSearchTerm(e.target.value);
                     }} />
                 {books.filter((book) => {
-                    if (searchTerm == "") {
+                    if (searchTerm === "") {
                         return book
                     }
                     else if (book.title.toLowerCase().includes(searchTerm.toLowerCase())){

@@ -1,0 +1,32 @@
+.ml-page {
+    background: linear-gradient(135deg, #98ceee, #4eb5f1);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+}
+
+.ml-container {
+    display: flex;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: 100px;
+    height: 400px;
+    justify-content: space-between;
+    background-color: #148bcf;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.wsirt-title {
+    color: white;
+    text-decoration: underline;
+}
+
+.ml-item {
+    padding: 0.5rem;
+    font-size: 20px;
+}

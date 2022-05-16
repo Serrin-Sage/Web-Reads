@@ -7,6 +7,7 @@ import './search-bar.css'
 import './themes.scss'
 import './picswitch.scss'
 import './book-list.css'
+import './ml-page.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

@@ -45,6 +45,11 @@ function ColorSwitcher({changeColor}) {
                 className='icon-div active'>
                 <span className='hover-text'>Hunter</span>
             </div>
+            <div id='matrix-theme' 
+                onClick={() => handleClick('matrix-theme')}
+                className='icon-div active'>
+                <span className='hover-text'>Matrix</span>
+            </div>
             
         </div>
         <div className='theme-text'>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-function SideBarNav({setShowProfile, setShowSettings, setShowBookList, changePic}) {
+function SideBarNav({setShowProfile, setShowSettings, setShowBookList, setShowMLpage, changePic}) {
     const [selectedPic, setPicture] = useState('')
     
     useEffect(()=> {
@@ -23,10 +23,11 @@ function SideBarNav({setShowProfile, setShowSettings, setShowBookList, changePic
         
             </div>
             <div className='side-bar-nav-options'>
-                <button className='settings-text' onClick={() => {setShowProfile(true); setShowSettings(false); setShowBookList(false)}}>Profile</button>
-                <button className='settings-text' onClick={() => {setShowSettings(true); setShowProfile(false); setShowBookList(false)}}>Settings</button>
-                <button className='settings-text' onClick={() => {setShowBookList(true); setShowSettings(false); setShowProfile(false)}}>Book List</button>
-                <Link to="/mlpage" className='settings-text'>ML Page</Link>
+                <button className='settings-text' onClick={() => {setShowProfile(true); setShowSettings(false); setShowBookList(false); setShowMLpage(false)}}>Profile</button>
+                <button className='settings-text' onClick={() => {setShowSettings(true); setShowProfile(false); setShowBookList(false); setShowMLpage(false)}}>Settings</button>
+                <button className='settings-text' onClick={() => {setShowBookList(true); setShowSettings(false); setShowProfile(false); setShowMLpage(false)}}>Book List</button>
+                <button className='settings-text' onClick={() => {setShowBookList(false); setShowSettings(false); setShowProfile(false); setShowMLpage(true)}}>ML Page</button>
+                {/* <Link to="/mlpage" className='settings-text'>ML Page</Link> */}
                 <Link to="/" >
                     <button className='settings-text' onClickCapture={logout}>Logout </button>
                 </Link>

@@ -2,6 +2,7 @@ import {React, useState, useEffect} from 'react'
 import SideBarNav from './SideBarNav'
 import Settings from './Settings'
 import BookList from './BookList'
+import MLpage from './MLpage'
 import ProfilePage from './ProfilePage'
 
 function UserPage({changeColor}) {
@@ -18,6 +19,7 @@ function UserPage({changeColor}) {
   const [showProfile, setShowProfile] = useState(true)
   const [showSettings, setShowSettings] = useState(true)
   const [showBookList, setShowBookList] = useState(true)
+  const [showMLpage, setShowMLpage] = useState(true)
 
    //updates User Profile Pic
    const updatePic = (newProfilePic) => {
@@ -27,7 +29,7 @@ function UserPage({changeColor}) {
   return ( 
     <div className='user-page-container'>
       
-        <SideBarNav changePic={selectedPic} setShowProfile={setShowProfile} setShowSettings={setShowSettings} setShowBookList={setShowBookList}/>
+        <SideBarNav changePic={selectedPic} setShowProfile={setShowProfile} setShowSettings={setShowSettings} setShowBookList={setShowBookList} setShowMLpage={setShowMLpage}/>
         <div className='profile-page'>
             { showProfile ? <ProfilePage /> : null }
         </div>
@@ -36,6 +38,9 @@ function UserPage({changeColor}) {
         </div>
         <div className='booklist-page'>
             { showBookList ? <BookList/> : null}
+        </div>
+        <div className='booklist-page'>
+            { showMLpage ? <MLpage/> : null}
         </div>
     </div>
   )

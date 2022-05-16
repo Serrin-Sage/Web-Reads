@@ -49,6 +49,10 @@
         background: linear-gradient(to bottom right, purple 45%, white 55%);
         border-color: black;
     }
+    #matrix-theme {
+        background: linear-gradient(to bottom right, rgb(0, 0, 0) 45%,rgb(12, 141, 0) 55%);
+        border-color: rgb(255, 255, 255);
+    }
 }
 
 .color-switcher {
@@ -480,6 +484,140 @@
     }
     #abt-aida {
         background-color: #90E6E6;
+        color: white;
+        
+    }
+
+    .link-icon {
+        color: white;
+    }
+}
+
+
+//===== MATRIX THEME =====//
+//NOT FINISHED
+.App.matrix-theme{
+    transition: 0.8s;
+    //Header
+    .header {
+        background-color: #000000;
+        transition: 0.8s;
+        .signinbtn {
+            background-color: #720000;
+            border: 1px solid #000000;
+            transition: 0.8s;
+            color:rgb(12, 141, 0);
+        }
+        .signinbtn:hover {
+            background-color: rgb(12, 141, 0);
+            color:#720000;
+        }
+        .signupbtn {
+            background-color: #11006e;
+            border: 1px solid #000000;
+            transition: 0.8s;
+            color:rgb(12, 141, 0);
+        }
+        .signupbtn:hover {
+            background-color: rgb(12, 141, 0);
+            color:#11006e;
+        }
+        .logo-img {
+            filter: invert(31%) sepia(97%) saturate(1050%) hue-rotate(81deg) brightness(100%) contrast(104%);
+        }
+    }
+    //Intro
+    .howitworks {
+        background: linear-gradient(135deg, #818181, #131414);
+    }
+    //Sign-in/up Forms
+    .formcontainer {
+        background: linear-gradient(135deg, #818181, #131414);
+        h2 {
+            color: white;
+        }
+        .app-wrapper {
+            background-color: rgba(0, 0, 0, 0.411);
+        }
+        .submit {
+            background-color: #444444;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+        .submit:hover {
+            background-color: white;
+            color: black;
+        }
+        .bottom-text {
+            color: white;
+        }
+    }
+
+    //Profile page
+    .user-page-container {
+        .side-bar-nav {
+            background-color: rgb(49, 49, 49);
+            transition: 0.8s;
+            
+            .settings-text {
+                background: black;
+                border: none;
+            }
+            .settings-text:hover{
+                background: linear-gradient(#333333,#838383);
+            }
+        }
+        .main-user-page {
+            background: linear-gradient(135deg, #444444, #888888);
+        }
+    }
+    .settings {
+        transition: 0.8s;
+        background-color: rgb(0, 0, 0);
+        .content-box {
+            color: rgb(12, 141, 0);
+            text-decoration: underline;
+        }
+        .theme-text {
+            background-color: #444444;
+            color: rgb(12, 141, 0);
+        }
+        .pic-switch-title {
+            color: rgb(12, 141, 0);
+        }
+        h3 {
+            color: rgb(12, 141, 0);
+        }
+    }
+}
+
+.Footer.dark-theme {
+    .footer {
+        background-color: rgb(59, 59, 59);
+        .contact {
+            color: rgb(196, 196, 196);
+        }
+        .contact:hover {
+            color: white;
+        }
+    }
+    #abt-serrin {
+        background-color: #303030;
+        color: white;
+        
+    }
+    #abt-sadia {
+        background-color: #282828;
+        color: white;
+        
+    }
+    #abt-chris {
+        background-color: #242424;
+        color: white;
+        
+    }
+    #abt-aida {
+        background-color: #202020;
         color: white;
         
     }

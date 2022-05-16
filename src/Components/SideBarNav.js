@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-function SideBarNav({setShowProfile, setShowSettings, changePic}) {
+function SideBarNav({setShowProfile, setShowSettings, setShowBookList, changePic}) {
     const [selectedPic, setPicture] = useState('')
     
     useEffect(()=> {
@@ -23,9 +23,9 @@ function SideBarNav({setShowProfile, setShowSettings, changePic}) {
         
             </div>
             <div className='side-bar-nav-options'>
-                <button className='settings-text' onClick={() => {setShowProfile(true); setShowSettings(false)}}>Profile</button>
-                <button className='settings-text' onClick={() => {setShowSettings(true); setShowProfile(false)}}>Settings</button>
-                <Link to="/booklist" className='settings-text'>Book List</Link>
+                <button className='settings-text' onClick={() => {setShowProfile(true); setShowSettings(false); setShowBookList(false)}}>Profile</button>
+                <button className='settings-text' onClick={() => {setShowSettings(true); setShowProfile(false); setShowBookList(false)}}>Settings</button>
+                <button className='settings-text' onClick={() => {setShowBookList(true); setShowSettings(false); setShowProfile(false)}}>Book List</button>
                 <Link to="/mlpage" className='settings-text'>ML Page</Link>
                 <Link to="/" >
                     <button className='settings-text' onClickCapture={logout}>Logout </button>

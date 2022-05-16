@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 //import { useState } from "react";
 import Validation from "./Validation";
-import appml_py from "../appml_py.py";
+//import appml_py from "../appml_py.py";
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import { render } from 'react-dom';
@@ -11,46 +11,13 @@ function MLpage() {
     const [value, setValue] = useState("");
 
     useEffect(() => {
-        axios.get("https://web-reads-ml.herokuapp.com/").then((response)=>{
+        axios.get("https://web-reads-ml.herokuapp.com/recommend").then((response)=>{
             console.log(response)
             setValue(response)
         }).catch(error => {
             console.log(error)
         })
     },[])
-
-/*
-    function funA(){
-        this.state = {
-            display: false
-        }
-    }
-
-    function funB() {
-        this.setState ={
-            display: true
-        }
-    }
-
-    function yada(){
-        <div>
-            <h3>
-                asdfghjkl
-            </h3>
-        </div>
-    }
-
-
-    function handleClick() {
-        console.log('handling click');
-        funB();
-        {this.state.display && <div>
-            <h3>Heeeey</h3>
-        </div>
-        }
-    }
-*/
-//    const [showML, setShowML] = useState(true)
 
     return(
     <div className="formcontainer">

@@ -34,7 +34,7 @@ function UserPage({changeColor}) {
         <div className='settings-page'>
             { showSettings ? <Settings changeColor={changeColor} changePic={updatePic}/> : null}
         </div>
-        <div >
+        <div className='booklist-page'>
             { showBookList ? <BookList/> : null}
         </div>
     </div>

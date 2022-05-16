@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start-server": "node server/app.js",
-    "start": "react-scripts start && python src/appml_py.py",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

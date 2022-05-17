@@ -1,13 +1,24 @@
-import React, {useState} from 'react'
-import BookData from '../TestData.json'
+import React, {useState, useEffect} from 'react'
+// import BookData from '../TestData.json'
 import BookInfo from './BookInfo';
+import axios from 'axios';
 
 function BookList() {
 
     const [searchTerm, setSearchTerm] = useState('')
+    const [BookData, setBookData] = useState('')
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/api/books/allbooks')
+        .then((response) => {
+            const allBooks = response.data;
+            setBookData(allBooks);
+        })
+        .catch(error => console.error(`Error: ${error}`));
+    }, []);
 
     const books = [];
-    for (let i=0; i<BookData.length; i++){
+    for (let i=0; i < BookData.length; i++){
         books.push(BookData[i]);
     }
     return (

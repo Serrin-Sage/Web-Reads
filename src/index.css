@@ -536,6 +536,7 @@ button:active {
     transition: 0.15s ease margin-top;
     cursor: auto;
     border-radius: 40px;
+    min-width: 300px;
 }
 
 

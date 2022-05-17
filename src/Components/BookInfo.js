@@ -5,8 +5,8 @@ function BookInfo({book}) {
   return (
     <div className='book-info'>
         <div className='book-details'>
-            <h3>{book.title}</h3> <br/>
-            {book.author}
+            <h3>{book.Name}</h3> <br/>
+            {book.Authors}
         </div>
         <div className='fav-icon-container'>
             <FavoriteBorderIcon className='fav-icon' fontSize='large' onClick={() => console.log("test")} />

@@ -10,6 +10,20 @@ import { render } from 'react-dom';
 function MLpage() {
     const [value, setValue] = useState("");
 
+    const currentuser = JSON.parse(localStorage.getItem('userInfo'));
+    const tuu = currentuser._id;
+
+    console.log('weeeeeeeeeee',currentuser._id);
+
+    useEffect(()=>{
+        axios.post(
+            "/api/users/loggedin",
+            {
+                "myID": tuu,
+            },
+        )
+    },[]);
+
     useEffect(() => {
         axios.get("https://web-reads-ml.herokuapp.com/recommend").then((response)=>{
             console.log(response)

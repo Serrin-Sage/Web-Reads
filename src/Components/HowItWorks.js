@@ -1,5 +1,8 @@
 import sign_up_gif from "../images/sign-up-click.gif"
 import theme_change from "../images/theme-change.gif"
+import survey_example from '../images/survey-example.gif'
+import book_list from '../images/book-list.gif'
+
 
 const HowItWorks = () => {
   return (
@@ -19,10 +22,12 @@ const HowItWorks = () => {
                   Our Algorithm takes the input from the survey and scans through our book database.
                   When it finds a good match a list of suggestions will be shown.</p>
               </h2>
+              <img src={survey_example} alt="survey-example gif" className="sign-up-gif"/>
               <h2 className="step-titles">
                 Step 3: Look through the book list 
                 <p className="step-description">You can add any book to your favoited list!</p>
               </h2>
+              <img src={book_list} alt="book-list gif" className="sign-up-gif"/>
               <h2 className="step-titles">
                 Step 4: Customize your Profile! 
                 <p className="step-description">You can change the Theme and your Profile Icon!</p>

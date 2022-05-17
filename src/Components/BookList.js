@@ -18,7 +18,7 @@ function BookList() {
     }, []);
 
     const books = [];
-    for (let i=0; i < BookData.length; i++){
+    for (let i=0; i<BookData.length; i++){
         books.push(BookData[i]);
     }
     return (

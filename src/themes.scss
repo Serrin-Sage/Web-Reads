@@ -187,6 +187,22 @@
             color: white;
         }
     }
+    .book-list-container {
+        background: linear-gradient(135deg, #444444, #888888);
+        .book-list-title {
+            color: white;
+        }
+        .book-info {
+            background: linear-gradient(#838383, #333333);
+            color: white;
+        }
+    }
+    .ml-page {
+        background: linear-gradient(135deg, #444444, #888888);
+        .ml-container {
+            background: linear-gradient(#838383, #333333);
+        }
+    }
 }
 
 .Footer.dark-theme {

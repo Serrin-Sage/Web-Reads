@@ -13,7 +13,7 @@ function BookList() {
     return (
         <div className='book-list-container'>
             <div className='book-list'>
-                <h1>Our Books</h1>
+                <h1 className='book-list-title'>Our Books</h1>
                 <input 
                     className='list-search-input'
                     type="text" 

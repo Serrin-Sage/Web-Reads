@@ -23,3 +23,9 @@ Other Dependencies:
 ```npm install sass```
 
 ```npm install axios```
+
+Links to other Repos:
+
+https://github.com/sadiachowdhury24/WebReadsback
+
+https://github.com/Serrin-Sage/ML_Capstone

@@ -36,7 +36,7 @@ function BookList() {
                     if (searchTerm === "") {
                         return book
                     }
-                    else if (book.title.toLowerCase().includes(searchTerm.toLowerCase())){
+                    else if (book.Name.toLowerCase().includes(searchTerm.toLowerCase())){
                         return book
                     }
                 }).map(book => <BookInfo book={book} />)}

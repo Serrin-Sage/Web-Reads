@@ -11,8 +11,8 @@ function ProfilePage() {
     //state = {something: []};}
     const [Ubook, UbooksetValue] = useState("");
     const yellow = Ubook.data;
-    console.log(yellow);
-    console.log('whooo',user);
+    // console.log(yellow);
+    // console.log('whooo',user);
     var be;
     var i;
     

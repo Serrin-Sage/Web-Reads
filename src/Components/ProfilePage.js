@@ -55,7 +55,7 @@ function ProfilePage() {
     */
 
     useEffect(()=>{
-        axios.get('/api/users/allusers')
+        axios.get('http://localhost:5000/api/users/allusers')
             .then((response)=>{
                 console.log(response)
                 UbooksetValue(response)

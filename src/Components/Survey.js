@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SurveySearchBar from "./SurveySearchBar";
 import BookData from "../TestData.json";
 import axios from "axios";
@@ -10,10 +10,52 @@ function Survey() {
     const [ans4, setAns4] = useState("");
     const [ans5, setAns5] = useState("");
 
+    const [Ubook, UbooksetValue] = useState("");
+    const yellow = Ubook.data;
+    const user = JSON.parse(localStorage.getItem('userInfo'));
+
+    useEffect(()=>{
+        axios.get('http://localhost:5000/api/users/allusers/')
+            .then((response)=>{
+                console.log(response)
+                UbooksetValue(response)
+        }).catch(error => {
+            console.log(error)
+        })
+    },[]);
+
+    // console.log(yellow);
+    // console.log('whooo',user);
+    var be;
+    var i;
+    const userId = user._id;
+    
+    function funcheck(){
+    for (i = 0; i < yellow.length; i++){
+        if(yellow[i]._id==user._id){
+            be = i;
+        }
+    }};
+
     const handleSurveySubmit = async (e) => {
         e.preventDefault();
+        
+        funcheck()
 
-        // first get user's data
+        console.log("USER:")
+        console.log(yellow[be])
+        console.log("USER ID:")
+        console.log(userId)
+        console.log("USER LIKED BOOKS:")
+        console.log(yellow[be].likedBooks)
+        yellow[be].likedBooks.push(ans1, ans2, ans3, ans4, ans5)
+        console.log("USER UPDATED LIKED BOOKS:")
+        console.log(yellow[be].likedBooks)
+        
+        axios.patch(`http://localhost:5000/api/users/${userId}`, {
+            likedBooks: yellow[be].likedBooks
+        }).then((response) => console.log(response));
+
         // axios.get('http://localhost:5000/api/loggedIn')
         // .then((response) => {
         //     const user = response.data;
@@ -39,7 +81,7 @@ function Survey() {
         //     setErrors(error.response.data.message);
         // }
 
-        window.location.href = "/userpage";
+        // window.location.href = "/userpage";
     };
 
     return (

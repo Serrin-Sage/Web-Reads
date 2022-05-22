@@ -40,7 +40,7 @@ function SignUpForm() {
         }
         else{
             setErrormessage("");
-            try {
+            try {   
                 const config = {
                     headers:{
                         "Content-type" : "application/json"
@@ -48,7 +48,7 @@ function SignUpForm() {
                 }
 
                 const { data } = await axios.post(
-                    "/api/users/signup",
+                    "http://localhost:5000/api/users/signup",
                     {
                         name,
                         email,

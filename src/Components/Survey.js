@@ -57,7 +57,22 @@ function Survey() {
         console.log(userId)
         console.log("USER LIKED BOOKS:")
         console.log(yellow[be].likedBooks)
-        yellow[be].likedBooks.push(ans1, ans2, ans3, ans4, ans5)
+        // yellow[be].likedBooks.push(ans1, ans2, ans3, ans4, ans5)
+        if (!yellow[be].likedBooks.includes(ans1)){
+            yellow[be].likedBooks.push(ans1)
+        }
+        if (!yellow[be].likedBooks.includes(ans2)){
+            yellow[be].likedBooks.push(ans2)
+        }
+        if (!yellow[be].likedBooks.includes(ans3)){
+            yellow[be].likedBooks.push(ans3)
+        }
+        if (!yellow[be].likedBooks.includes(ans4)){
+            yellow[be].likedBooks.push(ans4)
+        }
+        if (!yellow[be].likedBooks.includes(ans5)){
+            yellow[be].likedBooks.push(ans5)
+        }
         console.log("USER UPDATED LIKED BOOKS:")
         console.log(yellow[be].likedBooks)
         
@@ -65,32 +80,7 @@ function Survey() {
             likedBooks: yellow[be].likedBooks
         }).then((response) => console.log(response));
 
-        // axios.get('http://localhost:5000/api/loggedIn')
-        // .then((response) => {
-        //     const user = response.data;
-        //     console.log("user info:")
-        //     console.log(user)
-        // })
-        // .catch(error => console.error(`Error: ${error}`));
-
-        // update request
-        // try {
-        //     const { data } = await axios.post(
-        //         "/api/users/signup",
-        //         {
-        //             name,
-        //             email,
-        //             password,
-        //         },
-        //         config
-        //     );
-        //     console.log(data);
-        //     localStorage.setItem("userInfo", JSON.stringify(data));
-        // } catch (error) {
-        //     setErrors(error.response.data.message);
-        // }
-
-        // window.location.href = "/userpage";
+        window.location.href = "/userpage";
     };
 
     return (

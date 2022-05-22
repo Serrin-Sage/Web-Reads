@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SurveySearchBar from "./SurveySearchBar";
-import BookData from "../TestData.json";
+// import BookData from "../TestData.json";
 import axios from "axios";
 
 function Survey() {
@@ -11,6 +11,7 @@ function Survey() {
     const [ans5, setAns5] = useState("");
 
     const [Ubook, UbooksetValue] = useState("");
+    const [BookData, setBookData] = useState("");
     const yellow = Ubook.data;
     const user = JSON.parse(localStorage.getItem('userInfo'));
 
@@ -22,6 +23,14 @@ function Survey() {
         }).catch(error => {
             console.log(error)
         })
+        axios.get('http://localhost:5000/api/books/allbooks')
+            .then((response)=>{
+                console.log(response)
+                setBookData(response)
+        }).catch(error => {
+            console.log(error)
+        })
+
     },[]);
 
     // console.log(yellow);

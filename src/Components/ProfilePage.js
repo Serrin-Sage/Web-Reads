@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import SearchBar from './SearchBar'
 import BookData from '../TestData.json'
 import axios from 'axios';
+import LikedBookInfo from './LikedBookInfo'
 
 
 function ProfilePage() {
@@ -80,14 +81,15 @@ function ProfilePage() {
             Liked Books: 
             {funcheck()}
             {console.log('this is',yellow[be].likedBooks)}
-            <h4>{yellow[be].likedBooks}</h4>
+            {/* {yellow[be].likedBooks.map(book => <h4> {book} </h4>)} */}
+            {yellow[be].likedBooks.map(book => <LikedBookInfo book={book} />)}
         </div>
         :
         <div>
             loading...
         </div>
 }
-        <SearchBar placeholder="Enter a Book Title..." data={BookData}/>
+        {/* <SearchBar placeholder="Enter a Book Title..." data={BookData}/> */}
     </div>
   )
 }

@@ -11,8 +11,8 @@ function SurveySearchBar({placeholder, data, setAns}) {
     const handleFilter = (event) => {
         const searchWord = event.target.value;
         setWordEntered(searchWord)
-        const newFilter = data.filter((value) => {
-            return value.title.toLowerCase().includes(searchWord.toLowerCase());
+        const newFilter = data.data.filter((value) => {
+            return value.Name.toLowerCase().includes(searchWord.toLowerCase());
         });
         if (searchWord === "") {
             setFilterdData([]);
@@ -28,9 +28,9 @@ function SurveySearchBar({placeholder, data, setAns}) {
         // setWordEntered("");
     }
 
-    const handleClick = (title) => {
-        setWordEntered(title)
-        setAns(title)
+    const handleClick = (Name) => {
+        setWordEntered(Name)
+        setAns(Name)
         clearInput()
     }
 
@@ -47,8 +47,8 @@ function SurveySearchBar({placeholder, data, setAns}) {
         {filteredData.length !== 0 && (
         <div className='data-result'>
             {filteredData.slice(0, 15).map((value, key) => {
-                return <div className='data-item' onClick={() => {handleClick(value.title)}}>
-                   <p className='data-item-title'>{value.title}</p> 
+                return <div className='data-item' onClick={() => {handleClick(value.Name)}}>
+                   <p className='data-item-title'>{value.Name}</p> 
                 </div>
             })}
         </div>

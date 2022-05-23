@@ -7,8 +7,10 @@ import axios from 'axios';
 import Button from '@mui/material/Button';
 import { render } from 'react-dom';
 
+
 function MLpage() {
     const [value, setValue] = useState("");
+    
 
     const currentuser = JSON.parse(localStorage.getItem('userInfo'));
     const tuu = currentuser._id;
@@ -25,7 +27,7 @@ function MLpage() {
     },[]);
 
     useEffect(() => {
-        axios.get("https://web-reads-ml.herokuapp.com/recommend").then((response)=>{
+        axios.get("http://127.0.0.1:5000/recommend").then((response)=>{
             console.log(response)
             setValue(response)
         }).catch(error => {
